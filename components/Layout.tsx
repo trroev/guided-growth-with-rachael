@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Head from "next/head";
+import Navbar from "./Navbar";
 
 type Props = {
   children?: ReactNode;
@@ -12,14 +13,14 @@ const Layout = ({
 }: Props) => (
   <>
     <Head>
-      <title>{title}</title>
+      <title>{title} | Balanced Mind & Heart Therapy</title>
       <meta
         http-equiv="Content-Type"
         content="text/html;charset=UTF-8"
       />
       <meta
         name="description"
-        content="Website for Rachael Mathiak, LCSW"
+        content="Website for Rachael Mathiak, LMSW"
       />
       <meta
         name="keywords"
@@ -31,6 +32,7 @@ const Layout = ({
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <Navbar />
     {children}
   </>
 );

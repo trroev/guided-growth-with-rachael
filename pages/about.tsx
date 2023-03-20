@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 
 const About = () => (
-  <Layout title="ABOUT | Balanced Mind & Heart Therapy">
+  <Layout title="ABOUT">
     <h1>About</h1>
   </Layout>
 );
