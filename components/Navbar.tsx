@@ -29,8 +29,8 @@ const Navbar = () => {
                 />
               </Link>
               <div className="flex items-center">
-                <button
-                  className="flex flex-col h-12 w-12 justify-center items-center z-20"
+                <div
+                  className="flex flex-col h-12 w-12 justify-center items-center z-20 cursor-pointer"
                   onClick={handleNav}
                 >
                   <div
@@ -48,7 +48,7 @@ const Navbar = () => {
                       nav ? "-rotate-45 -translate-y-2.5" : ""
                     }`}
                   />
-                </button>
+                </div>
               </div>
             </div>
           </div>
