@@ -54,7 +54,14 @@ const Footer = () => (
       </div>
       <hr className="my-6 border-[#005073] sm:mx-auto lg:my-8" />
       <span className="block text-sm sm:text-center">
-        &copy; 2023 Trevor Mathiak
+        &copy; 2023{" "}
+        <a
+          href="https://www.trevormathiak.dev"
+          aria-label="Link to www.trevormathiak.dev"
+          className="hover:underline"
+        >
+          Trevor Mathiak
+        </a>
       </span>
     </div>
   </footer>
