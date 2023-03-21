@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 type Props = {
   children?: ReactNode;
@@ -15,7 +16,7 @@ const Layout = ({
     <Head>
       <title>{title} | Balanced Mind & Heart Therapy</title>
       <meta
-        http-equiv="Content-Type"
+        httpEquiv="Content-Type"
         content="text/html;charset=UTF-8"
       />
       <meta
@@ -32,8 +33,11 @@ const Layout = ({
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Navbar />
-    {children}
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <main className="mb-auto">{children}</main>
+      <Footer />
+    </div>
   </>
 );
 
