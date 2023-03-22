@@ -25,5 +25,9 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
-  }
+  },
+  "description": "This is a website for Rachael Mathiak, LMSW, built with [Next.js](https://nextjs.org/)",
+  "main": "next.config.js",
+  "author": "Trevor Mathiak <tmathiak@gmail.com> (https://www.trevormathiak.dev/)",
+  "license": "ISC"
 }

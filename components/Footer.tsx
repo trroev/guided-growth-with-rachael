@@ -56,9 +56,11 @@ const Footer = () => (
       <span className="block text-sm sm:text-center">
         &copy; 2023{" "}
         <a
-          href="https://www.trevormathiak.dev"
-          aria-label="Link to www.trevormathiak.dev"
           className="hover:underline"
+          href="https://www.trevormathiak.dev"
+          target="_blank"
+          aria-label="Link to www.trevormathiak.dev"
+          rel="noopener noreferrer"
         >
           Trevor Mathiak
         </a>
