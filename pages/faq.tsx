@@ -1,18 +1,123 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 
 const FAQ = () => (
   <Layout title="FAQ">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-xl tracking-widest border-b border-[#005073]">
+        <p className="uppercase text-xl tracking-widest border-b border-[#005073] mb-4">
           Frequently Asked Questions
         </p>
-        <h2 className="py-4 text-center">FAQ</h2>
-        <p className="py-4 text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi placeat dignissimos obcaecati. Iste, impedit?
-          Eligendi.
-        </p>
+        <div className="flex flex-col py-4">
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">Q: What is your fee?</h5>
+            <p className="text-justify text-sm">
+              My rate is (165 vs 175?) per 45-50 minute session. If
+              you’re looking for family therapy, typically these
+              appointment times are a full 60 minutes and are (190 vs
+              200?) per session.
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">
+              Q: How long do most people come to therapy?
+            </h5>
+            <p className="text-justify text-sm">
+              This varies from person to person, and largely depends
+              on what you&#39;re hoping therapy will help you with!
+              During our first 1-3 appointments we be working on
+              coming up with treatment or therapy goals to work on
+              together.. I have experience providing brief short term
+              treatment that is focused on a specific issue (ie:
+              insomnia and improving sleep, support with an adjustment
+              to a major life change such as a new job, starting
+              college, etc) and also have experience supporting people
+              who are looking for longer term support with managing
+              the day to day life stressors. Sometimes I work with
+              people for 3 months and sometimes it&#39;s for a year or
+              more. Based on your goals, we can discuss an estimated
+              timeline of treatment for your own unique needs.
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">Q: Do you Accept Insurance?</h5>
+            <p className="text-justify text-sm">
+              Not Currently. I am considered an out-of-network
+              provider. I can offer you a monthly superbill to submit
+              to your insurance to seek reimbursement for
+              out-of-pocket costs. Most insurances will reimburse
+              people between 40-60% for an out-of network provider
+              once their deductible is met. I encourage you to contact
+              your insurance mental health/behavioral benefits line to
+              confirm the details of your specific health coverage.
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">Q: What is a superbill?</h5>
+            <p className="text-justify text-sm">
+              Superbills are an invoice including information about
+              services you receive by me for your insurance to be able
+              to reimburse you. They include dates, service type
+              (therapy code for insurance), length of session, amount
+              paid by you, and a diagnosis code so that your insurance
+              carrier receives all the information they need to
+              reimburse some of the cost to you.
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">
+              Q: Do you offer in-person appointments?
+            </h5>
+            <p className="text-justify text-sm">
+              Not yet. In the future it is likely I will offer a few
+              days per month of in person appointments. Stay tuned!
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">
+              Q: What is{" "}
+              <a
+                className="underline font-medium hover:font-bold"
+                href="https://www.simplepractice.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to Simple Practice web page"
+              >
+                Simple Practice
+              </a>
+              ?
+            </h5>
+            <p className="text-justify text-sm">
+              Simple Practice is how we have our video appointments,
+              complete initial paperwork to get started, schedule
+              appointments, submit payments for your appointments and
+              receive your superbill invoices. I chose Simple Practice
+              for its reputation of being HIPPA compliant—meaning it
+              is a secure platform that protects your confidentiality,
+              data, and privacy as well as making it as easy as
+              possible for both myself and clients to schedule and
+              have appointments! You can join from the computer using
+              the appointment link that is emailed to you, or if
+              you&#39;re using a tablet/ipad or phone, you&#39;ll need
+              to download the free Simple Practice App!
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <h5 className="pb-2">Q: Other questions?</h5>
+            <p className="text-justify text-sm">
+              Please complete the{" "}
+              <Link
+                className="underline hover:font-semibold"
+                href="/contact"
+              >
+                contact
+              </Link>{" "}
+              form for a follow up email or schedule a 15 minute phone
+              call to discuss any other questions you may have about
+              getting started with me.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>

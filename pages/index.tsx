@@ -5,10 +5,10 @@ export default function Home() {
     <Layout title="HOME">
       <div className="flex justify-center items-center h-full py-36 px-4">
         <div className="text-center">
-          <h1 className="font-light pb-3">
-            Balanced Mind & Heart Therapy
+          <h1 className="font-light pb-4">
+            Guided Growth with Rachael
           </h1>
-          <p className="tracking-wider font-medium pt-3">
+          <p className="tracking-wider font-medium">
             Rachael Mathiak | LMSW
           </p>
         </div>
