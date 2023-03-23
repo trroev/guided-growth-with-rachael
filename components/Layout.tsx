@@ -9,11 +9,11 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  const fullTitle = `${title} | Guided Growth with Rachael`;
+  const pageTitle = `${title} | Guided Growth with Rachael`;
   return (
     <>
       <Head>
-        <title>{fullTitle}</title>
+        <title>{pageTitle}</title>
         <meta
           httpEquiv="Content-Type"
           content="text/html;charset=UTF-8"

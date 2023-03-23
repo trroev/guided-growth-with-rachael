@@ -1,5 +1,4 @@
 import FormikForm from "@/components/Form/Form";
-import Form from "@/components/Form/Form";
 import Layout from "@/components/Layout";
 
 const Contact = () => {

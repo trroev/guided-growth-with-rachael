@@ -21,7 +21,7 @@ const FormikForm = () => (
         .required("Please provide your name"),
       email: Yup.string()
         .email("Invalid email address")
-        .required("Please provide and email address"),
+        .required("Please provide an email address"),
       message: Yup.string()
         .max(600, "Message must be 600 characters or less")
         .required("Please provide a message"),
