@@ -10,10 +10,10 @@ const Footer = () => (
           className="flex items-center mb-4 sm:mb-0 hover:scale-110 ease-in duration-300 cursor-pointer"
         >
           <Image
-            src="/logo.svg"
+            src="/tree_logo.svg"
             height={48}
             width={48}
-            alt="Balanced Mind & Heart Logo"
+            alt="Guided Growth with Rachael Logo"
             className="h-8 mr-3"
           />
         </Link>

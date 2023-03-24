@@ -22,10 +22,10 @@ const Navbar = () => {
                 className="hover:scale-110 ease-in duration-300 cursor-pointer"
               >
                 <Image
-                  src="/logo.svg"
+                  src="/tree_logo.svg"
                   height={48}
                   width={48}
-                  alt="Balanced Mind & Heart Logo"
+                  alt="Guided Growth with Rachael Logo"
                 />
               </Link>
               <div className="flex items-center">
