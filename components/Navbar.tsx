@@ -4,9 +4,11 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
+
   const handleNav = () => {
     setNav(!nav);
   };
+
   const hamburgerLine: string =
     "h-0.5 w-9 my-1 rounded-full transition ease transform duration-300 bg-[#005073]";
 

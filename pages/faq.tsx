@@ -10,18 +10,20 @@ const FAQ = () => (
         </p>
         <div className="flex flex-col py-4">
           <div className="px-4 pb-6">
-            <h5 className="pb-2">Q: What is your fee?</h5>
+            <div className="pb-2">
+              <h5>Q: What is your fee?</h5>
+            </div>
             <p className="text-justify text-sm">
               My rate is (165 vs 175?) per 45-50 minute session. If
-              you’re looking for family therapy, typically these
+              you&#39;re looking for family therapy, typically these
               appointment times are a full 60 minutes and are (190 vs
               200?) per session.
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">
-              Q: How long do most people come to therapy?
-            </h5>
+            <div className="pb-2">
+              <h5>Q: How long do most people come to therapy?</h5>
+            </div>
             <p className="text-justify text-sm">
               This varies from person to person, and largely depends
               on what you&#39;re hoping therapy will help you with!
@@ -40,7 +42,9 @@ const FAQ = () => (
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">Q: Do you Accept Insurance?</h5>
+            <div className="pb-2">
+              <h5>Q: Do you Accept Insurance?</h5>
+            </div>
             <p className="text-justify text-sm">
               Not Currently. I am considered an out-of-network
               provider. I can offer you a monthly superbill to submit
@@ -53,7 +57,9 @@ const FAQ = () => (
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">Q: What is a superbill?</h5>
+            <div className="pb-2">
+              <h5>Q: What is a superbill?</h5>
+            </div>
             <p className="text-justify text-sm">
               Superbills are an invoice including information about
               services you receive by me for your insurance to be able
@@ -65,28 +71,30 @@ const FAQ = () => (
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">
-              Q: Do you offer in-person appointments?
-            </h5>
+            <div className="pb-2">
+              <h5>Q: Do you offer in-person appointments?</h5>
+            </div>
             <p className="text-justify text-sm">
               Not yet. In the future it is likely I will offer a few
               days per month of in person appointments. Stay tuned!
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">
-              Q: What is{" "}
-              <a
-                className="underline font-medium hover:font-bold"
-                href="https://www.simplepractice.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Simple Practice web page"
-              >
-                Simple Practice
-              </a>
-              ?
-            </h5>
+            <div className="pb-2">
+              <h5>
+                Q: What is{" "}
+                <a
+                  className="underline font-medium hover:font-bold"
+                  href="https://www.simplepractice.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Simple Practice web page"
+                >
+                  Simple Practice
+                </a>
+                ?
+              </h5>
+            </div>
             <p className="text-justify text-sm">
               Simple Practice is how we have our video appointments,
               complete initial paperwork to get started, schedule
@@ -103,7 +111,9 @@ const FAQ = () => (
             </p>
           </div>
           <div className="px-4 pb-6">
-            <h5 className="pb-2">Q: Other questions?</h5>
+            <div className="pb-2">
+              <h5>Q: Other questions?</h5>
+            </div>
             <p className="text-justify text-sm">
               Please complete the{" "}
               <Link
