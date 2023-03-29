@@ -9,7 +9,7 @@ export default function Home() {
             Guided Growth with Rachael
           </h1>
           <p className="tracking-wider font-medium">
-            Rachael Mathiak | LMSW
+            Rachael Mathiak | LMSW, LCSW
           </p>
         </div>
       </div>

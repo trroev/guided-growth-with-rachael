@@ -25,7 +25,7 @@ export const FormInput = ({ label, ...props }: InputProps) => {
         {label}
       </label>
       <input
-        className={`border rounded-lg p-3 flex border-[#005073] bg-[#005073]/10 ${
+        className={`border rounded-lg p-3 flex border-[#005073] bg-[#005073]/10 outline-none ${
           meta.touched && meta.error ? "border-red-600" : ""
         }`}
         {...field}
@@ -51,7 +51,7 @@ export const TextArea = ({ label, ...props }: TextAreaProps) => {
         {label}
       </label>
       <textarea
-        className={`border rounded-lg p-3 border-[#005073] bg-[#005073]/10 ${
+        className={`border rounded-lg p-3 border-[#005073] bg-[#005073]/10 outline-none ${
           meta.touched && meta.error ? "border-red-600" : ""
         }`}
         {...field}
