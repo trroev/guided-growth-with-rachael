@@ -6,7 +6,7 @@ const Contact = () => {
     <Layout title="CONTACT">
       <div className="w-full max-w-[1240px] mx-auto py-12">
         <div className="flex flex-col px-4">
-          <p className="uppercase text-xl tracking-widest border-b border-[#005073]">
+          <p className="uppercase text-2xl tracking-widest border-b border-[#005073]">
             Contact
           </p>
           <h2 className="py-4 text-center">Get In Touch</h2>

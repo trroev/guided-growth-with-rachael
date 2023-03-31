@@ -13,7 +13,29 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="mt-24 px-12 text-justify md:px-24 lg:px-48">
+      <div className="relative pt-24 px-12 text-justify md:px-24 lg:px-48">
+        <p className="text-xs absolute top-0 right-0">
+          Photo by{" "}
+          <a
+            className="hover:underline"
+            href="https://unsplash.com/@billy_huy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Billy Huynh's Unsplash profile"
+          >
+            Billy Huynh
+          </a>{" "}
+          on{" "}
+          <a
+            className="hover:underline"
+            href="https://unsplash.com/photos/4M1wucdlANA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to the background image on unsplash.com"
+          >
+            Unsplash
+          </a>
+        </p>
         <p className="pb-6">
           Change. One of the few absolute truths in life. Therapy
           offers a chance to facilitate growth, a deeper understanding
