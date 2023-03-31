@@ -14,10 +14,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="w-full z-10">
+      <div className=" w-full z-10">
         <div>
           <div className="w-full pt-9 pb-7 mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-24">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center w-full h-full 2xl:px-16">
               <Link
                 href="/"
                 aria-label="link to homepage"
@@ -30,7 +30,23 @@ const Navbar = () => {
                   alt="Guided Growth with Rachael Logo"
                 />
               </Link>
-              <div className="flex items-center">
+              <div>
+                <ul className="hidden md:flex">
+                  <li className="ml-10 hover:underline">
+                    <Link href="/about">About</Link>
+                  </li>
+                  <li className="ml-10 hover:underline">
+                    <Link href="/services">Services</Link>
+                  </li>
+                  <li className="ml-10 hover:underline">
+                    <Link href="/faq">FAQ</Link>
+                  </li>
+                  <li className="ml-10 hover:underline">
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="md:hidden flex items-center">
                 <div
                   className="flex flex-col h-12 w-12 justify-center items-center z-20 cursor-pointer"
                   onClick={handleNav}
@@ -78,27 +94,25 @@ const Navbar = () => {
             >
               <div className="flex flex-col justify-center items-center mt-28">
                 <Link href="/" onClick={() => setNav(false)}>
-                  <p className="text-2xl font-bold my-4 hover:underline">
+                  <p className="text-3xl my-4 hover:underline">
                     Home
                   </p>
                 </Link>
                 <Link href="/about" onClick={() => setNav(false)}>
-                  <p className="text-2xl font-bold my-4 hover:underline">
+                  <p className="text-3xl my-4 hover:underline">
                     About
                   </p>
                 </Link>
                 <Link href="/services" onClick={() => setNav(false)}>
-                  <p className="text-2xl font-bold my-4 hover:underline">
+                  <p className="text-3xl my-4 hover:underline">
                     Services
                   </p>
                 </Link>
                 <Link href="/faq" onClick={() => setNav(false)}>
-                  <p className="text-2xl font-bold my-4 hover:underline">
-                    FAQ
-                  </p>
+                  <p className="text-3xl my-4 hover:underline">FAQ</p>
                 </Link>
                 <Link href="/contact" onClick={() => setNav(false)}>
-                  <p className="text-2xl font-bold my-4 hover:underline">
+                  <p className="text-3xl my-4 hover:underline">
                     Contact
                   </p>
                 </Link>

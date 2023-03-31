@@ -69,7 +69,7 @@ const FormikForm = () => {
             label="Message"
             name="message"
             rows={10}
-            placeholder="Jane Doe"
+            placeholder="Your message here..."
           />
           <button className="w-full p-4 mt-4">{buttonText}</button>
         </Form>

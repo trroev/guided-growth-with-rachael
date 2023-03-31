@@ -11,39 +11,28 @@ const About = () => (
           <h2>Rachael Mathiak</h2>
           <p className="italic">(she/her/hers)</p>
         </div>
-        <div className="px-12 text-justify">
+        <div className="px-12 text-justify md:px-24 lg:px-48">
           <p className="pb-6">
             I am a licensed clinical social worker with 13 years
             experience in the mental health field. I graduated from
             Grand Valley State University in 2010 with my Bachelor in
-            Social Work. Following graduation, I worked for two years
-            gaining social work experience by working at a homeless
-            youth shelter (The Bridge, Arbor Circle), providing case
-            management services to families with children who had
-            disabilities, and then providing case management services
-            for adults with significant mental illness (Bipolar
-            disorder, Schizophrenia) and intellectual disabilities.
-            Following these experiences, I went to graduate school at
-            Western Michigan University and graduated in 2013 with my
+            Social Work (BSW). As a BSW I worked for two years gaining
+            experience with adults, children, teens and families
+            providing case management and supportive counseling
+            services to runaway youth, families with children with
+            intellectual disabilities and adults with severe and
+            chronic mental illness. I wanted to learn more and deepen
+            my knowledge so decided to attend graduate school at
+            Western Michigan University. I graduated in 2013 with my
             Master&#39;s Degree in Social Work (MSW) and earned my
             SPADA graduate certificate (Speciality Program in Alcohol
-            and Drug Abuse). With my Master&#39;s degree, I ventured
-            into therapy via a home based therapist position serving
-            children, adolescents, and their families. My family and I
-            relocated to California where I continued to gain
-            experience in crisis interventions and stabilization
-            serving children and families as well as adults
-            reintegrating into the community from locked facilities. I
-            then transitioned to a role of providing therapy to youth
-            in the foster care system and processing trauma they had
-            endured. I took a break from therapy, and pursued
-            experience in medical social work by working for a
-            community hospital. Eventually, I returned to my
-            heart&#39;s calling of offering therapy to children,
-            teens, families and parents. Most recently I worked for a
-            telehealth private practice group providing care to
-            children, teens, families and adults. Throughout the years
-            I had aspired to open my own practice and here we are.
+            and Drug Abuse). I have had the honor to meet many
+            different people from different walks of life throughout
+            my career, some of these experiences include: mental
+            health crisis stabilization, serving as a home-based and
+            community based therapist for individuals and families
+            experiencing significant mental health symptoms, foster
+            youth, medical social work, and outpatient therapy.
           </p>
           <p className="pb-6">
             My broad experience with a variety of different people and

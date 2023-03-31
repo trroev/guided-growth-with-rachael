@@ -52,76 +52,90 @@ const Services = () => (
               </li>
             </ul>
           </div>
-          <div className="border-b border-[#005073] mb-6">
-            <p className="uppercase font-semibold tracking-widest pb-2">
-              Issues Treated
-            </p>
-            <p className="pb-2">
-              I offer general support which means I am qualified to
-              address a wide range of concerns. Below are what I
-              especially enjoy helping people work through:
-            </p>
-            <ul className="list-disc text-left">
-              <div>
-                <li className="pb-4">
-                  Anxiety Disorders (separation anxiety, generalized
-                  anxiety disorder, panic disorder, social anxiety
-                  disorder, perfectionism, some phobias)
-                </li>
-                <li className="pb-4">Depression/Mood Disorders</li>
-                <li className="pb-4">Life transitions and changes</li>
-                <li className="pb-4">Grief/loss</li>
-                <li className="pb-4">
-                  Stress Management/Problem Solving
-                </li>
-                <li className="pb-4">
-                  LGBTQIA (especially youth related stressors)
-                </li>
-                <li className="pb-4">Sleep/Insomnia </li>
-                <li className="pb-4">
-                  Parenting Issues (addressing problematic behaviors,
-                  power struggles in the parent-child relationship)
-                </li>
-                <li className="pb-4">
-                  Interpersonal/Relationship Concerns
-                </li>
-                <li className="pb-4">
-                  Obsessive-Compulsive Disorder (OCD)
-                </li>
+          <div>
+            <div className="border-b border-[#005073] mb-6">
+              <p className="pb-12">
+                I offer general support which means I am qualified to
+                address a wide range of concerns. Below are what I
+                especially enjoy helping people work through:
+              </p>
+              <div className="grid grid-cols-2 gap-6 md:gap-12 lg:gap-24">
+                <div className="mr-auto">
+                  <p className="uppercase font-semibold tracking-widest pb-2">
+                    Issues Treated
+                  </p>
+                  <ul className="list-disc text-left">
+                    <div>
+                      <li className="pb-4">
+                        Anxiety Disorders (separation anxiety,
+                        generalized anxiety disorder, panic disorder,
+                        social anxiety disorder, perfectionism, some
+                        phobias)
+                      </li>
+                      <li className="pb-4">
+                        Depression/Mood Disorders
+                      </li>
+                      <li className="pb-4">
+                        Life transitions and changes
+                      </li>
+                      <li className="pb-4">Grief/loss</li>
+                      <li className="pb-4">
+                        Stress Management/Problem Solving
+                      </li>
+                      <li className="pb-4">
+                        LGBTQIA (especially youth related stressors)
+                      </li>
+                      <li className="pb-4">Sleep/Insomnia </li>
+                      <li className="pb-4">
+                        Parenting Issues (addressing problematic
+                        behaviors, power struggles in the parent-child
+                        relationship)
+                      </li>
+                      <li className="pb-4">
+                        Interpersonal/Relationship Concerns
+                      </li>
+                      <li className="pb-4">
+                        Obsessive-Compulsive Disorder (OCD)
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+                <div className="ml-auto">
+                  <p className="uppercase font-semibold tracking-widest pb-2">
+                    Modes of Treatment
+                  </p>
+                  <ul className="list-disc">
+                    <li className="pb-4">
+                      Cognitive Behavioral Therapy (CBT)
+                    </li>
+                    <li className="pb-4">
+                      Motivational Interviewing
+                    </li>
+                    <li className="pb-4">
+                      Brief Solutions Focused Therapy
+                    </li>
+                    <li className="pb-4">
+                      Mindfulness Based Stress Reduction
+                    </li>
+                    <li className="pb-4">
+                      Dialectical Behavioral Therapy (DBT)
+                    </li>
+                    <li className="pb-4">
+                      Exposure Response Prevention (ERP)
+                    </li>
+                    <li className="pb-4">
+                      Affirmative Therapy Person-Centered
+                    </li>
+                    <li className="pb-4">Interpersonal</li>
+                    <li className="pb-4">Strengths-Based</li>
+                    <li className="pb-4">
+                      <span className="italic">Coming Soon: </span>
+                      Gottman Method Level 2 for Couples
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </ul>
-          </div>
-          <div className="border-b border-[#005073] mb-6">
-            <p className="uppercase font-semibold tracking-widest pb-2">
-              Modes of Treatment
-            </p>
-            <ul className="list-disc">
-              <li className="pb-4">
-                Cognitive Behavioral Therapy (CBT)
-              </li>
-              <li className="pb-4">Motivational Interviewing</li>
-              <li className="pb-4">
-                Brief Solutions Focused Therapy
-              </li>
-              <li className="pb-4">
-                Mindfulness Based Stress Reduction
-              </li>
-              <li className="pb-4">
-                Dialectical Behavioral Therapy (DBT)
-              </li>
-              <li className="pb-4">
-                Exposure Response Prevention (ERP)
-              </li>
-              <li className="pb-4">
-                Affirmative Therapy Person-Centered
-              </li>
-              <li className="pb-4">Interpersonal</li>
-              <li className="pb-4">Strengths-Based</li>
-              <li className="pb-4">
-                <span className="italic">Coming Soon: </span>Gottman
-                Method Level 2 for Couples
-              </li>
-            </ul>
+            </div>
           </div>
           <div className="border-b border-[#005073] mb-6">
             <p className="uppercase font-semibold tracking-widest pb-2">

@@ -63,7 +63,7 @@ const Layout = ({ children, title }: Props) => {
       </Head>
       <div className="flex flex-col h-screen">
         <Navbar />
-        <main className="mb-auto">{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>

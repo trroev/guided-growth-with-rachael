@@ -22,7 +22,7 @@ export const FormInput = ({ label, ...props }: InputProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label}
+        {label} <span className="text-red-600">*</span>
       </label>
       <input
         className={`border rounded-lg p-3 flex border-[#005073] bg-[#005073]/10 outline-none ${
@@ -48,7 +48,7 @@ export const TextArea = ({ label, ...props }: TextAreaProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label}
+        {label} <span className="text-red-600">*</span>
       </label>
       <textarea
         className={`border rounded-lg p-3 border-[#005073] bg-[#005073]/10 outline-none ${

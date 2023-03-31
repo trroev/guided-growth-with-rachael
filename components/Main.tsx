@@ -1,15 +1,19 @@
+import { before } from "node:test";
+
 const Main = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-full w-full py-36 mx-auto">
-      <div className="text-center">
-        <h1 className="font-light pb-4">
-          Guided Growth with Rachael
-        </h1>
-        <p className="tracking-wider font-medium">
-          Rachael Mathiak | LMSW, LCSW
-        </p>
+    <div className="mb-12">
+      <div className="flex flex-col justify-center items-center h-80 w-full mx-auto bg-cover bg-no-repeat bg-[url(/billy-huynh-4M1wucdlANA-unsplash.jpg)]">
+        <div className="text-center bg-[#eed9c4]/75 rounded-xl p-4">
+          <h1 className="font-light pb-4">
+            Guided Growth with Rachael
+          </h1>
+          <p className="tracking-wider font-medium">
+            Rachael Mathiak | LMSW, LCSW
+          </p>
+        </div>
       </div>
-      <div className="mt-24 px-12 text-justify">
+      <div className="mt-24 px-12 text-justify md:px-24 lg:px-48">
         <p className="pb-6">
           Change. One of the few absolute truths in life. Therapy
           offers a chance to facilitate growth, a deeper understanding
@@ -25,18 +29,15 @@ const Main = () => {
           help you transform those challenges into personal growth!
         </p>
         <p className="pb-6">
-          I work with people to identify what personal growth,
-          changes, and shifts they need to live a more fulfilling,
-          satisfactory, and meaningful life - and then partner with
-          them to achieve it. I have and continue to seek training in
-          the most up-to-date evidence based treatments, although I do
-          not subscribe to any one modality of treatment. Instead, I
-          use a variety of skills and interventions based on each
-          person&#39;s unique needs and goals for treatment. So
-          whether you&#39;re wanting someone to vent your day to day
-          stressors to or if you need support in overcoming anxiety,
-          depression, or another significant mental health concern, I
-          have the expertise to support you through it.
+          One of my favorite parts of being a therapist is the honor
+          I&#39;ve had to hear people&#39;s stories and walk beside
+          them for a chapter of it. I work with people to identify
+          what personal growth, changes, and shifts they need to make
+          in order to live a more fulfilling, satisfactory, and
+          meaningful life - and then then guide them towards achieving
+          it. I believe everyone already has the strength, resiliency,
+          and inner knowledge they need within themselves to reach
+          their goals - I&#39;m here to guide you to discovering it.
         </p>
         <p>
           I firmly believe for therapy to be effective for anyone, it

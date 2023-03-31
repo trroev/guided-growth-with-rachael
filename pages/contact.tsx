@@ -11,9 +11,8 @@ const Contact = () => {
           </p>
           <h2 className="py-4 text-center">Get In Touch</h2>
           <p className="py-4 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Commodi placeat dignissimos obcaecati. Iste, impedit?
-            Eligendi.
+            Please fill out the form below, and I will get back to you
+            quickly. I look forward to speaking with you!
           </p>
         </div>
         <div className="w-full h-auto lg:p-4">
