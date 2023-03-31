@@ -5,7 +5,7 @@ const FAQ = () => (
   <Layout title="FAQ">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-xl tracking-widest border-b border-[#005073] mb-4">
+        <p className="uppercase text-2xl tracking-widest border-b border-[#005073] mb-4">
           Frequently Asked Questions
         </p>
         <div className="flex flex-col py-4">

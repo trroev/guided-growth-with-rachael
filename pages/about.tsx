@@ -4,14 +4,14 @@ const About = () => (
   <Layout title="ABOUT">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-xl tracking-widest border-b border-[#005073]">
+        <p className="uppercase text-2xl tracking-widest border-b border-[#005073]">
           About
         </p>
         <div className="py-4 text-center">
           <h2>Rachael Mathiak</h2>
           <p className="italic">(she/her/hers)</p>
         </div>
-        <div className="px-12 text-justify md:px-24 lg:px-48">
+        <div className="px-6 text-justify md:px-24 lg:px-48">
           <p className="pb-6">
             I am a licensed clinical social worker with 13 years
             experience in the mental health field. I graduated from

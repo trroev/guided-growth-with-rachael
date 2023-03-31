@@ -4,15 +4,15 @@ import Link from "next/link";
 const Services = () => (
   <Layout title="SERVICES">
     <div className="w-full max-w-[1240px] mx-auto py-12">
-      <div className="flex flex-col px-6 sm:px-12">
-        <p className="uppercase text-xl tracking-widest border-b border-[#005073]">
+      <div className="flex flex-col px-4">
+        <p className="uppercase text-2xl tracking-widest border-b border-[#005073]">
           Services
         </p>
-        <div className="py-4 text-justify">
+        <div className="p-4 text-justify md:px-12">
           <div className="border-b border-[#005073] mb-6">
             <ul className="list-disc">
               <li className="pb-4">
-                My rate is $165 per 50 minute session. If you’re
+                My rate is $165 per 50 minute session. If you&#39;re
                 interested in family therapy, these appointments are a
                 full 60 minutes and are $198 per session
                 <p className="italic text-sm pt-2">
@@ -59,10 +59,10 @@ const Services = () => (
                 address a wide range of concerns. Below are what I
                 especially enjoy helping people work through:
               </p>
-              <div className="grid grid-cols-2 gap-6 md:gap-12 lg:gap-24">
-                <div className="mr-auto">
+              <div className="md:grid grid-cols-2 gap-6 md:gap-12 lg:gap-24">
+                <div className="pb-6">
                   <p className="uppercase font-semibold tracking-widest pb-2">
-                    Issues Treated
+                    Issues Treated:
                   </p>
                   <ul className="list-disc text-left">
                     <div>
@@ -102,7 +102,7 @@ const Services = () => (
                 </div>
                 <div className="ml-auto">
                   <p className="uppercase font-semibold tracking-widest pb-2">
-                    Modes of Treatment
+                    Modes of Treatment:
                   </p>
                   <ul className="list-disc">
                     <li className="pb-4">
