@@ -7,38 +7,68 @@ const About = () => (
         <p className="uppercase text-xl tracking-widest border-b border-[#005073]">
           About
         </p>
-        <h2 className="py-4 text-center">Who I am</h2>
-        <div className="text-justify">
-          <p className="pb-4">
-            Rachael is a licensed clinical social worker (CA-LCSW
-            #73823, MI-LMSW #6801110065, MA-LICSW #124554) with a
-            decade of experience primarily working with adolescents
-            and families in a variety of settings including crisis
-            prevention and intervention, individual and family
-            therapy, and case management. Rachael is especially
-            skilled at working with individuals who struggle with
-            symptoms related to anxiety, depression, LGBTQIA youth
-            related stressors, those who have endured trauma, and
-            family conflict. She believes the foundation of a
-            meaningful therapeutic experience starts with trust and
-            the relationship between therapist and client. From there,
-            she uses a strengths based approach to help people
-            discover their own inner resilience to reach their goals.
+        <div className="py-4 text-center">
+          <h2>Rachael Mathiak</h2>
+          <p className="italic">(she/her/hers)</p>
+        </div>
+        <div className="px-12 text-justify">
+          <p className="pb-6">
+            I am a licensed clinical social worker with 13 years
+            experience in the mental health field. I graduated from
+            Grand Valley State University in 2010 with my Bachelor in
+            Social Work. Following graduation, I worked for two years
+            gaining social work experience by working at a homeless
+            youth shelter (The Bridge, Arbor Circle), providing case
+            management services to families with children who had
+            disabilities, and then providing case management services
+            for adults with significant mental illness (Bipolar
+            disorder, Schizophrenia) and intellectual disabilities.
+            Following these experiences, I went to graduate school at
+            Western Michigan University and graduated in 2013 with my
+            Master&#39;s Degree in Social Work (MSW) and earned my
+            SPADA graduate certificate (Speciality Program in Alcohol
+            and Drug Abuse). With my Master&#39;s degree, I ventured
+            into therapy via a home based therapist position serving
+            children, adolescents, and their families. My family and I
+            relocated to California where I continued to gain
+            experience in crisis interventions and stabilization
+            serving children and families as well as adults
+            reintegrating into the community from locked facilities. I
+            then transitioned to a role of providing therapy to youth
+            in the foster care system and processing trauma they had
+            endured. I took a break from therapy, and pursued
+            experience in medical social work by working for a
+            community hospital. Eventually, I returned to my
+            heart&#39;s calling of offering therapy to children,
+            teens, families and parents. Most recently I worked for a
+            telehealth private practice group providing care to
+            children, teens, families and adults. Throughout the years
+            I had aspired to open my own practice and here we are.
           </p>
-          <p className="pb-4">
-            Rachael has received training in mindfulness, DBT, CBT,
-            solutions focused therapy, trauma informed care, and
-            motivational interviewing: all frameworks she regularly
-            brings into her practice. She is a big follower of the
-            Gottman Institute and regularly reads their blogs and
-            books for up to date research about human relationships
-            and improving our connection to one another.
+          <p className="pb-6">
+            My broad experience with a variety of different people and
+            in different settings have shaped me to be a deeply
+            empathetic, non-judgemental, and skilled therapist. I am a
+            balance of nurturing and compassionate with directness and
+            honest reflections of what you bring to the therapy space.
+            I am an LGBTQIA affirming, social justice aligned, and
+            climate change aware therapist - all of these world issues
+            impact our day to day living and can exacerbate anxiety
+            and mood concerns. I&#39;m a safe person to discuss these
+            concerns with.
           </p>
-          <p>
-            In her free time Rachael enjoys going for hikes with her
-            family (this includes the family dog of course!),
-            traveling to new places, catching a yoga class or getting
-            lost in a good book.
+          <p className="pb-12">
+            I am currently providing tele-health appointments to
+            residents in Michigan, California, and Massachusetts (CA
+            LCSW #73823, MI LMSW # 6801110065, MA LICSW # 124554).
+            I&#39;m so glad you found me and I look forward to the
+            opportunity of supporting you through whatever concerns
+            have brought you here!
+          </p>
+          <p className="italic text-sm">
+            * Please note due to mental health laws I am only able to
+            provide therapy to people living and located in the states
+            I&#39;m licensed in.
           </p>
         </div>
       </div>
