@@ -8,7 +8,7 @@ const Services = () => (
         <p className="uppercase text-2xl tracking-widest border-b border-green">
           Services
         </p>
-        <div className="p-4 md:px-12">
+        <div className="p-4 md:px-12 md:text-justify">
           <div className="border-b border-green mb-6">
             <ul className="list-disc">
               <li className="pb-4">

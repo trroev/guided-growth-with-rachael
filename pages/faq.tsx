@@ -13,7 +13,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: What is your fee?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md:text-justify">
               My rate is $165 per 50 minute session. If you&#39;re
               interested in family therapy, these appointments are a
               full 60 minutes and are $198 per session.
@@ -23,7 +23,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: How long do most people come to therapy?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md:text-justify">
               This varies from person to person, and mostly depends on
               what you&#39;re hoping therapy will help you with!
               During our first 1-3 appointments we will be exploring
@@ -36,17 +36,17 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: Do you Accept Insurance?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm pb-3">
+            <p className="text-sm pb-3 md:text-justify">
               Not Currently. I am considered an out-of-network
               provider. I can offer you a monthly superbill to submit
               to your insurance to seek reimbursement for
               out-of-pocket costs.
             </p>
-            <p className="text-center sm:text-justify text-sm pb-1">
+            <p className="text-sm pb-1 md:text-justify">
               Here are some helpful questions to ask your insurance
               company prior to starting therapy with me:
             </p>
-            <div className="text-sm text-center sm:text-justify px-8">
+            <div className="text-sm px-8">
               <ul className="text-justify list-disc">
                 <li>Do I have mental health benefits?</li>
                 <li>What is my deductible and has it been met?</li>
@@ -72,7 +72,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: What is a superbill?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md:text-justify">
               Superbills are an invoice including information about
               services you receive by me for your insurance to be able
               to reimburse you. They include dates, service type
@@ -86,7 +86,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: Do you offer in-person appointments?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md: text-justify">
               Not yet. In the future it is likely I will offer a few
               days per month of in person appointments. Stay tuned!
             </p>
@@ -95,7 +95,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: What is Simple Practice ?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md:text-justify">
               Simple Practice is how we have our video appointments,
               complete initial paperwork to get started, schedule
               appointments, submit payments for your appointments and
@@ -114,7 +114,7 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: Other questions?</h5>
             </div>
-            <p className="text-center sm:text-justify text-sm">
+            <p className="text-sm md:text-justify">
               Please complete the{" "}
               <Link
                 className="underline hover:font-semibold"
