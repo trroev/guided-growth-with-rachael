@@ -5,7 +5,7 @@ const FAQ = () => (
   <Layout title="FAQ">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-2xl tracking-widest border-b border-[#005073] mb-4">
+        <p className="uppercase text-2xl tracking-widest border-b border-green mb-4">
           Frequently Asked Questions
         </p>
         <div className="flex flex-col py-4">
@@ -14,10 +14,9 @@ const FAQ = () => (
               <h5>Q: What is your fee?</h5>
             </div>
             <p className="text-justify text-sm">
-              My rate is (165 vs 175?) per 45-50 minute session. If
-              you&#39;re looking for family therapy, typically these
-              appointment times are a full 60 minutes and are (190 vs
-              200?) per session.
+              My rate is $165 per 50 minute session. If you&#39;re
+              interested in family therapy, these appointments are a
+              full 60 minutes and are $198 per session.
             </p>
           </div>
           <div className="px-4 pb-6">
@@ -25,19 +24,11 @@ const FAQ = () => (
               <h5>Q: How long do most people come to therapy?</h5>
             </div>
             <p className="text-justify text-sm">
-              This varies from person to person, and largely depends
-              on what you&#39;re hoping therapy will help you with!
-              During our first 1-3 appointments we be working on
-              coming up with treatment or therapy goals to work on
-              together.. I have experience providing brief short term
-              treatment that is focused on a specific issue (ie:
-              insomnia and improving sleep, support with an adjustment
-              to a major life change such as a new job, starting
-              college, etc) and also have experience supporting people
-              who are looking for longer term support with managing
-              the day to day life stressors. Sometimes I work with
-              people for 3 months and sometimes it&#39;s for a year or
-              more. Based on your goals, we can discuss an estimated
+              This varies from person to person, and mostly depends on
+              what you&#39;re hoping therapy will help you with!
+              During our first 1-3 appointments we will be exploring
+              and agreeing on therapy goals to focus on together.
+              Based on your goals, we can discuss an estimated
               timeline of treatment for your own unique needs.
             </p>
           </div>
@@ -45,16 +36,37 @@ const FAQ = () => (
             <div className="pb-2">
               <h5>Q: Do you Accept Insurance?</h5>
             </div>
-            <p className="text-justify text-sm">
+            <p className="text-justify text-sm pb-3">
               Not Currently. I am considered an out-of-network
               provider. I can offer you a monthly superbill to submit
               to your insurance to seek reimbursement for
-              out-of-pocket costs. Most insurances will reimburse
-              people between 40-60% for an out-of network provider
-              once their deductible is met. I encourage you to contact
-              your insurance mental health/behavioral benefits line to
-              confirm the details of your specific health coverage.
+              out-of-pocket costs.
             </p>
+            <p className="text-justify text-sm pb-1">
+              Here are some helpful questions to ask your insurance
+              company prior to starting therapy with me:
+            </p>
+            <div className="text-sm text-justify px-8">
+              <ul className="list-disc">
+                <li>Do I have mental health benefits?</li>
+                <li>What is my deductible and has it been met?</li>
+                <li>
+                  How many psychotherapy sessions per calendar year
+                  does my plan cover?
+                </li>
+                <li>
+                  How much does my plan cover for an out-of-network
+                  provider?
+                </li>
+                <li>
+                  What is the coverage amount per therapy session?
+                </li>
+                <li>
+                  Do I need a referral from a physician to use my
+                  mental health coverage?
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
@@ -81,19 +93,7 @@ const FAQ = () => (
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
-              <h5>
-                Q: What is{" "}
-                <a
-                  className="underline font-medium hover:font-bold"
-                  href="https://www.simplepractice.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to Simple Practice web page"
-                >
-                  Simple Practice
-                </a>
-                ?
-              </h5>
+              <h5>Q: What is Simple Practice ?</h5>
             </div>
             <p className="text-justify text-sm">
               Simple Practice is how we have our video appointments,

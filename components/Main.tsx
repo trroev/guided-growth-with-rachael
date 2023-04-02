@@ -1,10 +1,13 @@
-import { before } from "node:test";
+const imageUrl = "/redwoods.jpg";
 
 const Main = () => {
   return (
     <div className="mb-12">
-      <div className="flex flex-col justify-center items-center h-72 w-full mx-auto bg-cover bg-no-repeat bg-[url(/billy-huynh-4M1wucdlANA-unsplash.jpg)] md:h-80 lg:h-96">
-        <div className="text-center bg-[#eed9c4]/75 p-6 w-full">
+      <div
+        className="flex flex-col justify-center items-center h-72 w-full mx-auto bg-cover bg-no-repeat md:h-80 lg:h-96"
+        style={{ backgroundImage: `url(${imageUrl})` }}
+      >
+        <div className="text-center bg-beige/75 p-6 w-full">
           <h1 className="font-light pb-4">
             Guided Growth with Rachael
           </h1>
@@ -14,7 +17,7 @@ const Main = () => {
         </div>
       </div>
       <div className="relative pt-24 px-12 text-justify md:px-24 lg:px-48">
-        <p className="text-xs absolute top-0 right-0">
+        <p className="text-xs absolute top-0 right-1">
           Photo by{" "}
           <a
             className="hover:underline"

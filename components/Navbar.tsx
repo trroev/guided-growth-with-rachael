@@ -10,11 +10,11 @@ const Navbar = () => {
   };
 
   const hamburgerLine: string =
-    "h-0.5 w-9 my-1 rounded-full transition ease transform duration-300 bg-[#005073]";
+    "h-0.5 w-9 my-1 rounded-full transition ease transform duration-300 bg-green";
 
   return (
-    <nav>
-      <div className=" w-full z-10">
+    <nav className="bg-beige z-50">
+      <div className=" w-full">
         <div>
           <div className="w-full pt-9 pb-7 mx-auto px-6 sm:px-10 md:px-12 lg:px-16 xl:px-24">
             <div className="flex justify-between items-center w-full h-full 2xl:px-16">
@@ -74,15 +74,13 @@ const Navbar = () => {
       </div>
       <div
         className={
-          nav
-            ? "fixed left-0 top-0 w-full h-screen bg-[#eed9c4]/80"
-            : ""
+          nav ? "fixed left-0 top-0 w-full h-screen bg-beige/80" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-full h-screen bg-[#eed9c4] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-full h-screen bg-beige p-10 ease-in duration-500"
               : "fixed top-[-100%] p-10 ease-in duration-500"
           }
         >

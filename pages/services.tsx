@@ -5,11 +5,11 @@ const Services = () => (
   <Layout title="SERVICES">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-2xl tracking-widest border-b border-[#005073]">
+        <p className="uppercase text-2xl tracking-widest border-b border-green">
           Services
         </p>
         <div className="p-4 text-justify md:px-12">
-          <div className="border-b border-[#005073] mb-6">
+          <div className="border-b border-green mb-6">
             <ul className="list-disc">
               <li className="pb-4">
                 My rate is $165 per 50 minute session. If you&#39;re
@@ -53,7 +53,7 @@ const Services = () => (
             </ul>
           </div>
           <div>
-            <div className="border-b border-[#005073] mb-6">
+            <div className="border-b border-green mb-6">
               <p className="pb-12">
                 I offer general support which means I am qualified to
                 address a wide range of concerns. Below are what I
@@ -123,21 +123,21 @@ const Services = () => (
                     <li className="pb-4">
                       Exposure Response Prevention (ERP)
                     </li>
-                    <li className="pb-4">
-                      Affirmative Therapy Person-Centered
-                    </li>
+                    <li className="pb-4">Affirmative Therapy</li>
+                    <li className="pb-4">Person-Centered</li>
                     <li className="pb-4">Interpersonal</li>
                     <li className="pb-4">Strengths-Based</li>
+                    <li className="pb-4">Humanistic Approach</li>
                     <li className="pb-4">
                       <span className="italic">Coming Soon: </span>
-                      Gottman Method Level 2 for Couples
+                      Gottman Method Level 1 & 2 for Couples
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div className="border-b border-[#005073] mb-6">
+          <div className="border-b border-green mb-6">
             <p className="uppercase font-semibold tracking-widest pb-2">
               Payment
             </p>
@@ -148,7 +148,7 @@ const Services = () => (
               are an approved use of your funds.
             </p>
           </div>
-          <div className="border-b border-[#005073]">
+          <div className="border-b border-green">
             <p className="uppercase font-semibold tracking-widest pb-2">
               Cancellation Policy
             </p>

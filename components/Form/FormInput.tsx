@@ -22,17 +22,17 @@ export const FormInput = ({ label, ...props }: InputProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label} <span className="text-red-600">*</span>
+        {label} <span className="text-red">*</span>
       </label>
       <input
-        className={`border rounded-lg p-3 flex border-[#005073] bg-[#005073]/10 outline-none ${
-          meta.touched && meta.error ? "border-red-600" : ""
+        className={`border rounded-lg p-3 flex border-green bg-green/10 outline-none ${
+          meta.touched && meta.error ? "border-" : ""
         }`}
         {...field}
         {...props}
       />
       {meta.touched && meta.error ? (
-        <div className="text-red-600 uppercase text-sm mt-2">
+        <div className="text-red uppercase text-sm mt-2">
           {meta.error}
         </div>
       ) : null}
@@ -48,17 +48,17 @@ export const TextArea = ({ label, ...props }: TextAreaProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label} <span className="text-red-600">*</span>
+        {label} <span className="text-red">*</span>
       </label>
       <textarea
-        className={`border rounded-lg p-3 border-[#005073] bg-[#005073]/10 outline-none ${
-          meta.touched && meta.error ? "border-red-600" : ""
+        className={`border rounded-lg p-3 border-green bg-green/10 outline-none ${
+          meta.touched && meta.error ? "border-red" : ""
         }`}
         {...field}
         {...props}
       />
       {meta.touched && meta.error ? (
-        <div className="text-red-600 uppercase text-sm mt-2">
+        <div className="text-red uppercase text-sm mt-2">
           {meta.error}
         </div>
       ) : null}

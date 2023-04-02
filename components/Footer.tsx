@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => (
-  <footer className="rounded-lg shadow m-4">
+  <footer className="m-4">
     <div className="w-full container mx-auto p-4 md:px-6 md:py-8">
       <div className="sm:flex sm:items-center sm:justify-between">
         <Link
@@ -52,7 +52,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <hr className="my-6 border-[#005073] sm:mx-auto lg:my-8" />
+      <hr className="my-6 border-green sm:mx-auto lg:my-8" />
       <span className="block text-sm sm:text-center">
         &copy; 2023{" "}
         <a

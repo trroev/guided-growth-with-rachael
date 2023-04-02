@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#eed9c4] text-[#005073] tracking-wide;
+    @apply bg-beige text-green tracking-wide;
   }
 
   h1,
@@ -29,7 +29,7 @@
   }
 
   button {
-    @apply border bg-[#005073] text-[#eed9c4] rounded-xl uppercase hover:bg-[#005073]/80 ease-in duration-300;
+    @apply border bg-green text-beige rounded-xl uppercase hover:bg-[#005073]/80 ease-in duration-300;
   }
 }
 

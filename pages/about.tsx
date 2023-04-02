@@ -4,7 +4,7 @@ const About = () => (
   <Layout title="ABOUT">
     <div className="w-full max-w-[1240px] mx-auto py-12">
       <div className="flex flex-col px-4">
-        <p className="uppercase text-2xl tracking-widest border-b border-[#005073]">
+        <p className="uppercase text-2xl tracking-widest border-b border-green">
           About
         </p>
         <div className="py-4 text-center">
@@ -20,7 +20,7 @@ const About = () => (
             experience with adults, children, teens and families
             providing case management and supportive counseling
             services to runaway youth, families with children with
-            intellectual disabilities and adults with severe and
+            intellectual disabilities, and adults with severe and
             chronic mental illness. I wanted to learn more and deepen
             my knowledge so decided to attend graduate school at
             Western Michigan University. I graduated in 2013 with my
@@ -28,25 +28,25 @@ const About = () => (
             SPADA graduate certificate (Speciality Program in Alcohol
             and Drug Abuse). I have had the honor to meet many
             different people from different walks of life throughout
-            my career, some of these experiences include: mental
+            my career. Some of these experiences include: mental
             health crisis stabilization, serving as a home-based and
             community based therapist for individuals and families
             experiencing significant mental health symptoms, foster
             youth, medical social work, and outpatient therapy.
           </p>
           <p className="pb-6">
-            My broad experience with a variety of different people and
-            in different settings have shaped me to be a deeply
-            empathetic, non-judgemental, and skilled therapist. I am a
-            balance of nurturing and compassionate with directness and
-            honest reflections of what you bring to the therapy space.
-            I am an LGBTQIA affirming, social justice aligned, and
-            climate change aware therapist - all of these world issues
-            impact our day to day living and can exacerbate anxiety
-            and mood concerns. I&#39;m a safe person to discuss these
-            concerns with.
+            My broad experience with a variety of people in different
+            settings have shaped me to be a deeply empathetic,
+            non-judgemental, and skilled therapist. I am a balance of
+            nurturing and compassionate with directness and honest
+            reflections of what you bring to the therapy space. I am
+            an LGBTQIA affirming, social justice aligned, and climate
+            change aware therapist - all of these world issues impact
+            our day to day living and can exacerbate anxiety and mood
+            concerns. I&#39;m a safe person to discuss these concerns
+            with.
           </p>
-          <p className="pb-12">
+          <p className="pb-3">
             I am currently providing tele-health appointments to
             residents in Michigan, California, and Massachusetts (CA
             LCSW #73823, MI LMSW # 6801110065, MA LICSW # 124554).
