@@ -51,15 +51,15 @@ const Layout = ({ children, title }: Props) => {
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"
-          color="#eed9c4"
+          color="#005073"
         />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#eed9c4" />
+        <meta name="msapplication-TileColor" content="#fff8e7" />
         <meta
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
         />
-        <meta name="theme-color" content="#eed9c4" />
+        <meta name="theme-color" content="#fff8e7" />
       </Head>
       <div className="flex flex-col h-screen">
         <Navbar />

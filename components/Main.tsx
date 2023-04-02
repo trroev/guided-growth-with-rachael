@@ -59,10 +59,10 @@ const Main = () => {
           them for a chapter of it. I work with people to identify
           what personal growth, changes, and shifts they need to make
           in order to live a more fulfilling, satisfactory, and
-          meaningful life - and then then guide them towards achieving
-          it. I believe everyone already has the strength, resiliency,
-          and inner knowledge they need within themselves to reach
-          their goals - I&#39;m here to guide you to discovering it.
+          meaningful life - and then guide them towards achieving it.
+          I believe everyone already has the strength, resiliency, and
+          inner knowledge they need within themselves to reach their
+          goals - I&#39;m here to guide you to discovering it.
         </p>
         <p>
           I firmly believe for therapy to be effective for anyone, it

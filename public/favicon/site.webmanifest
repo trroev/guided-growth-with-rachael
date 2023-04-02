@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Guided Growth with Rachael",
+    "short_name": "Guided Growth with Rachael",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#eed9c4",
-    "background_color": "#eed9c4",
+    "theme_color": "#fff8e7",
+    "background_color": "#fff8e7",
     "display": "standalone"
 }
