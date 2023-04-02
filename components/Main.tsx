@@ -1,4 +1,4 @@
-const imageUrl = "/redwoods.jpg";
+const imageUrl = "/assets/redwoods.jpg";
 
 const Main = () => {
   return (
@@ -16,7 +16,7 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="relative pt-24 px-12 text-justify md:px-24 lg:px-48">
+      <div className="relative pt-24 px-12 text-center sm:text-justify md:px-24 lg:px-48">
         <p className="text-xs absolute top-0 right-1">
           Photo by{" "}
           <a

@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import rachael from "/assets/rachael.png";
 
 const About = () => (
   <Layout title="ABOUT">
@@ -11,7 +12,7 @@ const About = () => (
           <h2>Rachael Mathiak</h2>
           <p className="italic">(she/her/hers)</p>
         </div>
-        <div className="px-6 text-justify md:px-24 lg:px-48">
+        <div className="px-6 text-center sm:text-justify md:px-24 lg:px-48">
           <p className="pb-6">
             I am a licensed clinical social worker with 13 years
             experience in the mental health field. I graduated from
