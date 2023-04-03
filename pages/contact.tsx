@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
       <div className="mb-6">
         <div
-          className="flex flex-col justify-center items-center h-96 w-full mx-auto bg-cover bg-no-repeat md:h-80 lg:h-[40rem]"
+          className="flex flex-col justify-center items-center h-96 w-full mx-auto bg-cover bg-no-repeat md:h-[32rem] lg:h-[40rem]"
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
         <div className="relative">

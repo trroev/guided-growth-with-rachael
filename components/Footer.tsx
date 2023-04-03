@@ -53,18 +53,21 @@ const Footer = () => (
         </ul>
       </div>
       <hr className="my-6 border-green sm:mx-auto lg:my-8" />
-      <span className="block text-sm sm:text-center">
-        &copy; 2023{" "}
-        <a
-          className="hover:underline"
-          href="https://www.trevormathiak.dev"
-          target="_blank"
-          aria-label="Link to www.trevormathiak.dev"
-          rel="noopener noreferrer"
-        >
-          Trevor Mathiak
-        </a>
-      </span>
+      <div className="flex flex-col sm:flex-row justify-between text-sm">
+        <p className="block pb-2">Rachael Mathiak Therapy, LLC</p>
+        <p className="block">
+          &copy; 2023{" "}
+          <a
+            className="hover:underline"
+            href="https://www.trevormathiak.dev"
+            target="_blank"
+            aria-label="Link to www.trevormathiak.dev"
+            rel="noopener noreferrer"
+          >
+            Trevor Mathiak
+          </a>
+        </p>
+      </div>
     </div>
   </footer>
 );
