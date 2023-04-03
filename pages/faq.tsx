@@ -93,7 +93,19 @@ const FAQ = () => (
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
-              <h5>Q: What is Simple Practice ?</h5>
+              <h5>
+                Q: What is{" "}
+                <a
+                  href="/pdf/simple-practice-client-portal.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Simple Practice Client Portal How-to pdf link"
+                  className="font-medium underline hover:font-bold"
+                >
+                  Simple Practice
+                </a>
+                ?
+              </h5>
             </div>
             <p className="text-sm md:text-justify">
               Simple Practice is how we have our video appointments,

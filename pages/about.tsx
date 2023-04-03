@@ -50,9 +50,9 @@ const About = () => (
             <p className="pb-6">
               My broad experience with a variety of people in
               different settings have shaped me to be a deeply
-              empathetic, non-judgemental, and skilled therapist. I am
-              a balance of nurturing and compassionate with directness
-              and honest reflections of what you bring to the therapy
+              empathetic, non-judgemental, and skilled therapist. With
+              a balance of nurturance and compassion, I offer direct
+              and honest reflections that you bring into the therapy
               space. I am an LGBTQIA affirming, social justice
               aligned, and climate change aware therapist - all of
               these world issues impact our day to day living and can

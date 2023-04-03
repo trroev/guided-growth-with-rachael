@@ -10,7 +10,7 @@ const Footer = () => (
           className="flex items-center mb-4 sm:mb-0 hover:scale-110 ease-in duration-300 cursor-pointer"
         >
           <Image
-            src="/plant_logo.svg"
+            src="/assets/logo.svg"
             height={48}
             width={48}
             alt="Guided Growth with Rachael Logo"

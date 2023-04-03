@@ -70,7 +70,16 @@ const Main = () => {
           between a therapist and the person seeking treatment. Not
           every therapist is the right fit for you! I encourage and
           welcome people to continue seeking a therapist that they
-          feel connected to - even if it may not be me. Research
+          feel connected to - even if it may not be me.{" "}
+          <a
+            href="https://www.apa.org/monitor/2019/11/ce-corner-relationships"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to American Psychological Association research article"
+            className="font-medium underline hover:font-semibold"
+          >
+            Research
+          </a>{" "}
           supports that people will best achieve their goals in
           therapy predicated on having a therapist who they feel like
           “gets them.”

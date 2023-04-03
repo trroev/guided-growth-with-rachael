@@ -1,5 +1,6 @@
 import FormikForm from "@/components/Form/Form";
 import Layout from "@/components/Layout";
+const imageUrl = "/assets/poppies.png";
 
 const Contact = () => {
   return (
@@ -20,6 +21,36 @@ const Contact = () => {
           <div className="p-4">
             <FormikForm />
           </div>
+        </div>
+      </div>
+      <div className="mb-6">
+        <div
+          className="flex flex-col justify-center items-center h-96 w-full mx-auto bg-cover bg-no-repeat md:h-80 lg:h-[40rem]"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        ></div>
+        <div className="relative">
+          <p className="text-xs absolute top-0 right-1">
+            Photo by{" "}
+            <a
+              className="hover:underline"
+              href="https://unsplash.com/@timmossholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Tim Mossholder's Unsplash profile"
+            >
+              Tim Mossholder
+            </a>{" "}
+            on{" "}
+            <a
+              className="hover:underline"
+              href="https://unsplash.com/photos/aiJ0R0oRtak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to the bannger image on unsplash.com"
+            >
+              Unsplash
+            </a>
+          </p>
         </div>
       </div>
     </Layout>
