@@ -12,6 +12,8 @@ interface Values {
 const FormikForm = () => {
   const [buttonText, setButtonText] =
     useState<string>("Send Message");
+  const [success, setSuccess] = useState<boolean>(false);
+  const [messageState, setMessageState] = useState<string>("");
 
   return (
     <Formik
@@ -31,17 +33,38 @@ const FormikForm = () => {
           .max(600, "Message must be 600 characters or less")
           .required("Please provide a message"),
       })}
-      onSubmit={(
+      onSubmit={async (
         values: Values,
         { setSubmitting, resetForm }: FormikHelpers<Values>
       ) => {
         setButtonText("Sending...");
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-          setButtonText(buttonText);
+        const res = await fetch("/api/email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: values.fullName,
+            email: values.email,
+            message: values.message,
+          }),
+        });
+        const data = await res.json();
+        if (res.status === 200) {
           resetForm({});
-        }, 400);
+          setSuccess(true);
+          setButtonText(buttonText);
+          setMessageState(data.message);
+          setTimeout(() => {
+            setMessageState("");
+          }, 5000);
+        } else {
+          setMessageState(data.message);
+          setTimeout(() => {
+            setMessageState("");
+          }, 5000);
+        }
+        setSubmitting(false);
       }}
     >
       {({ isSubmitting }) => (
@@ -72,6 +95,17 @@ const FormikForm = () => {
             placeholder="Your message here..."
           />
           <button className="w-full p-4 mt-4">{buttonText}</button>
+          <div>
+            <p className="text-success uppercase text-sm mt-4">
+              {success !== false ? (
+                messageState
+              ) : (
+                <span className="text-red uppercase text-sm mt-4">
+                  {messageState}
+                </span>
+              )}
+            </p>
+          </div>
         </Form>
       )}
     </Formik>
