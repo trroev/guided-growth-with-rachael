@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import rachael from "@/public/assets/rachael04.png";
+import rachael from "@/public/assets/rachael.png";
 import Image from "next/image";
 
 const About = () => (
@@ -13,17 +13,29 @@ const About = () => (
           <h2>Rachael Mathiak</h2>
           <p className="italic">(she/her/hers)</p>
         </div>
-        <div className="m-auto px-6 md:text-justify lg:grid grid-cols-5 gap-8">
-          <div className="flex items-center justify-center p-4 col-span-2">
+        <div className="m-auto px-6 md:text-justify lg:grid grid-cols-11 gap-8">
+          <div className="flex flex-col justify-center p-4 col-span-5 mb-6">
             <Image
               src={rachael}
-              height={400}
-              width={400}
+              height={750}
+              width={750}
               alt="Rachael Mathiak headshot"
               className="rounded-xl"
             />
+            <p className="text-xs text-right">
+              Photo by{" "}
+              <a
+                className="hover:underline"
+                href="https://paigemariephotography33.pixieset.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to Paige Marie Photography website"
+              >
+                Paige Marie Photography
+              </a>
+            </p>
           </div>
-          <div className="col-span-3">
+          <div className="col-span-6">
             <p className="pb-6">
               I am a licensed clinical social worker with 13 years
               experience in the mental health field. I graduated from
@@ -32,23 +44,23 @@ const About = () => (
               gaining experience with adults, children, teens and
               families providing case management and supportive
               counseling services to runaway youth, families with
-              children with intellectual disabilities, and adults with
+              children with intellectual disabilities and adults with
               severe and chronic mental illness. I wanted to learn
               more and deepen my knowledge so decided to attend
               graduate school at Western Michigan University. I
               graduated in 2013 with my Master&#39;s Degree in Social
               Work (MSW) and earned my SPADA graduate certificate
               (Speciality Program in Alcohol and Drug Abuse). I have
-              had the honor to meet many different people from
-              different walks of life throughout my career. Some of
-              these experiences include: mental health crisis
-              stabilization, serving as a home-based and community
-              based therapist for individuals and families
-              experiencing significant mental health symptoms, foster
-              youth, medical social work, and outpatient therapy.
+              had the honor to meet many people from different walks
+              of life throughout my career. Some of these experiences
+              include: mental health crisis stabilization, serving as
+              a home-based and community based therapist for
+              individuals and families experiencing significant mental
+              health symptoms, foster youth, medical social work, and
+              outpatient therapy.
             </p>
             <p className="pb-6">
-              My broad experience with a variety of people in
+              My broad experience with a variety of people and in
               different settings have shaped me to be a deeply
               empathetic, non-judgemental, and skilled therapist. With
               a balance of nurturance and compassion, I offer direct

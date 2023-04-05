@@ -33,6 +33,9 @@ const Navbar = () => {
               <div>
                 <ul className="hidden md:flex">
                   <li className="ml-10 hover:underline">
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li className="ml-10 hover:underline">
                     <Link href="/about">About</Link>
                   </li>
                   <li className="ml-10 hover:underline">
