@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import rachael from "@/public/assets/rachael.png";
+import rachael from "@/public/assets/rachael03.jpeg";
 import Image from "next/image";
 
 const About = () => (
@@ -13,16 +13,16 @@ const About = () => (
           <h2>Rachael Mathiak</h2>
           <p className="italic">(she/her/hers)</p>
         </div>
-        <div className="m-auto px-6 md:text-justify lg:grid grid-cols-11 gap-8">
-          <div className="flex flex-col justify-center p-4 col-span-5 mb-6">
+        <div className="m-auto px-6 md:text-justify lg:grid grid-cols-5 gap-8">
+          <div className="flex flex-col justify-center items-center p-4 col-span-2 mb-6">
             <Image
               src={rachael}
-              height={750}
-              width={750}
+              height={500}
+              width={500}
               alt="Rachael Mathiak headshot"
-              className="rounded-xl"
+              className="rounded-xl shadow shadow-green/75"
             />
-            <p className="text-xs text-right">
+            <p className="text-xs pt-1">
               Photo by{" "}
               <a
                 className="hover:underline"
@@ -35,7 +35,7 @@ const About = () => (
               </a>
             </p>
           </div>
-          <div className="col-span-6">
+          <div className="col-span-3">
             <p className="pb-6">
               I am a licensed clinical social worker with 13 years
               experience in the mental health field. I graduated from
