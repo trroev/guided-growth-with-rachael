@@ -28,8 +28,8 @@ export default async function handler(
     `;
 
     const data = {
-      to: "tmathiak@gmail.com",
-      from: "tmathiak@gmail.com",
+      to: process.env.TO_EMAIL,
+      from: process.env.FROM_EMAIL,
       subject: `${fullName.toUpperCase()} sent you a message via Guided Growth with Rachael`,
       text: `Email => ${email}`,
       html: msg.replace(/\r\n/g, "<br>"),

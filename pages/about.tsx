@@ -19,7 +19,7 @@ const About = () => (
               src={rachael}
               height={400}
               width={400}
-              alt="Rachael Mathiak headshot with magnolia tree in background"
+              alt="Rachael Mathiak headshot"
               className="rounded-xl"
             />
           </div>
