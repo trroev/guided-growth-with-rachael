@@ -59,6 +59,7 @@ const FormikForm = () => {
             setMessageState("");
           }, 5000);
         } else {
+          setButtonText(buttonText);
           setMessageState(data.message);
           setTimeout(() => {
             setMessageState("");
