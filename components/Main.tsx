@@ -1,4 +1,4 @@
-const imageUrl = "/assets/redwoods.jpg";
+const imageUrl = "/assets/redwoods.webp";
 
 const Main = () => {
   return (

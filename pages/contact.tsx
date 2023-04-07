@@ -1,6 +1,6 @@
 import FormikForm from "@/components/Form/Form";
 import Layout from "@/components/Layout";
-const imageUrl = "/assets/poppies.png";
+const imageUrl = "/assets/poppies.webp";
 
 const Contact = () => {
   return (

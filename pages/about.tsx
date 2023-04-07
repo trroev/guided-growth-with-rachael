@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import rachael from "@/public/assets/rachael.jpeg";
+import rachael from "@/public/assets/rachael.webp";
 import Image from "next/image";
 
 const About = () => (
