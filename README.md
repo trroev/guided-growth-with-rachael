@@ -2,7 +2,7 @@
 
 **Check it out:** [rachaelmathiak.com](https://www.rachaelmathiak.com)
 
-![page preview image](/assets/screenshot.jpg)
+![page preview image](/public//assets/screenshot.jpg)
 
 ## How It's Made:
 
