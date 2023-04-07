@@ -1,6 +1,7 @@
 import FormikForm from "@/components/Form/Form";
 import Layout from "@/components/Layout";
-const imageUrl = "/assets/poppies.webp";
+import Image from "next/image";
+import poppies from "@/public/assets/poppies.webp";
 
 const Contact = () => {
   return (
@@ -24,10 +25,17 @@ const Contact = () => {
         </div>
       </div>
       <div className="mb-6">
-        <div
-          className="flex flex-col justify-center items-center h-96 w-full mx-auto bg-cover bg-no-repeat md:h-[32rem] lg:h-[40rem]"
-          style={{ backgroundImage: `url(${imageUrl})` }}
-        ></div>
+        <div className="flex flex-col justify-center items-center h-96 w-full mx-auto relative md:h-[32rem] lg:h-[40rem]">
+          <Image
+            alt="poppies with ocean in background"
+            src={poppies}
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
         <div className="relative">
           <p className="text-xs absolute top-0 right-1">
             Photo by{" "}

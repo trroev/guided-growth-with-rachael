@@ -1,12 +1,20 @@
-const imageUrl = "/assets/redwoods.webp";
+import redwoods from "@/public/assets/redwoods.webp";
+import Image from "next/image";
 
 const Main = () => {
   return (
     <div className="mb-12">
-      <div
-        className="flex flex-col justify-center items-center h-72 w-full mx-auto bg-cover bg-no-repeat md:h-80 lg:h-96"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      >
+      <div className="flex flex-col justify-center items-center h-72 w-full mx-auto relative md:h-80 lg:h-96">
+        <Image
+          alt="Redwoods with sunrise"
+          src={redwoods}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            zIndex: "-1",
+          }}
+        />
         <div className="text-center bg-beige/75 p-6 w-full">
           <h1 className="font-light pb-4">
             Guided Growth with Rachael
