@@ -16,10 +16,11 @@ const About = () => (
         <div className="m-auto px-6 md:text-justify lg:grid grid-cols-5 gap-8">
           <div className="flex flex-col justify-center items-center p-4 col-span-2 mb-6">
             <Image
+              alt="Rachael Mathiak headshot"
               src={rachael}
+              placeholder="blur"
               height={500}
               width={500}
-              alt="Rachael Mathiak headshot"
               className="rounded-xl shadow shadow-green/75"
             />
             <p className="text-xs pt-1">

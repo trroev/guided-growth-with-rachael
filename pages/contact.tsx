@@ -30,6 +30,7 @@ const Contact = () => {
             alt="poppies with ocean in background"
             src={poppies}
             fill
+            placeholder="blur"
             sizes="100vw"
             style={{
               objectFit: "cover",

@@ -9,6 +9,7 @@ const Main = () => {
           alt="Redwoods with sunrise"
           src={redwoods}
           fill
+          placeholder="blur"
           sizes="100vw"
           style={{
             objectFit: "cover",
