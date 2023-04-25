@@ -21,7 +21,7 @@ const Services = () => (
                 </p>
               </li>
               <li className="pb-4">
-                Individual therapy for ages 12+ (kids, teens, adults)
+                Individual therapy for ages 8+ (kids, teens, adults)
                 <p className="italic text-sm pt-2">
                   * Able to work with younger children on a
                   case-by-case basis, please{" "}
