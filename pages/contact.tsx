@@ -15,8 +15,8 @@ const Contact = () => {
           </p>
           <h2 className="py-4 text-center">Get In Touch</h2>
           <div className="flex flex-col py-4">
-            <div className="flex justify-around p-3 mb-6 border rounded-md border-green">
-              <p className="flex items-center gap-3">
+            <div className="mx-auto px-12 py-3 mb-6 border rounded-md border-green sm:mx-0 sm:px-0 sm:flex sm:justify-around lg:mx-20">
+              <p className="flex items-center gap-3 pb-6 sm:pb-0">
                 <Icons.phone size={16} aria-hidden="true" />
                 <a
                   href="tel:6162821573"
