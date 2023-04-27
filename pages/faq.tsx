@@ -87,8 +87,11 @@ const FAQ = () => (
               <h5>Q: Do you offer in-person appointments?</h5>
             </div>
             <p className="text-sm md: text-justify">
-              Not yet. In the future it is likely I will offer a few
-              days per month of in person appointments. Stay tuned!
+              I have some limited availability for in person
+              appointments to those who are located in the greater
+              Grand Rapids area. Please indicate that this is
+              something you&#39;re interested in when reaching out to
+              start therapy so we can plan for in person services!
             </p>
           </div>
           <div className="px-4 pb-6">
@@ -112,7 +115,7 @@ const FAQ = () => (
               complete initial paperwork to get started, schedule
               appointments, submit payments for your appointments and
               receive your superbill invoices. I chose Simple Practice
-              for its reputation of being HIPPA compliant—meaning it
+              for its reputation of being HIPAA compliant—meaning it
               is a secure platform that protects your confidentiality,
               data, and privacy as well as making it as easy as
               possible for both myself and clients to schedule and

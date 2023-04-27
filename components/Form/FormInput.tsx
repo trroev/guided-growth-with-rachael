@@ -25,8 +25,8 @@ export const FormInput = ({ label, ...props }: InputProps) => {
         {label} <span className="text-red">*</span>
       </label>
       <input
-        className={`border rounded-lg p-3 flex border-green bg-green/10 outline-none ${
-          meta.touched && meta.error ? "border-" : ""
+        className={`border rounded-lg border-green p-3 flex bg-green/10 outline-none ${
+          meta.touched && meta.error ? "border-red" : ""
         }`}
         {...field}
         {...props}

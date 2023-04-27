@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 import FormikForm from "@/components/Form/Form";
 import Layout from "@/components/Layout";
-import Image from "next/image";
 import poppies from "@/public/assets/poppies.webp";
+import { Icons } from "@/components/Icons";
 
 const Contact = () => {
   return (
@@ -12,11 +14,41 @@ const Contact = () => {
             Contact
           </p>
           <h2 className="py-4 text-center">Get In Touch</h2>
-          <p className="py-4 text-center">
-            Please fill out the form below, and I will get back to you
-            within two business days. I look forward to speaking with
-            you!
-          </p>
+          <div className="flex flex-col py-4">
+            <div className="flex justify-around p-3 mb-6 border rounded-md border-green">
+              <p className="flex items-center gap-3">
+                <Icons.phone size={16} aria-hidden="true" />
+                <a
+                  href="tel:6162821573"
+                  aria-label="link to make a phone call to Rachael Mathiak at 6162821573"
+                  className="hover:underline"
+                >
+                  (616) 282-1573
+                </a>
+              </p>
+              <p className="flex items-center gap-3">
+                <Icons.map size={16} aria-hidden="true" />
+                <a
+                  href="https://goo.gl/maps/tHqEQhXzTzk6homHA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="link to location on Google Maps"
+                  className="hover:underline"
+                >
+                  3280 Beltline Ct,
+                  <br />
+                  Suite 100/200,
+                  <br />
+                  Grand Rapids, MI 49525
+                </a>
+              </p>
+            </div>
+            <p className="py-4 text-center">
+              Please fill out the form below, and I will get back to
+              you within two business days. I look forward to speaking
+              with you!
+            </p>
+          </div>
         </div>
         <div className="w-full h-auto lg:p-4">
           <div className="p-4">

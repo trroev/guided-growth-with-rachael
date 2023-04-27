@@ -2,6 +2,10 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "author": "Trevor Mathiak <tmathiak@gmail.com> (https://www.trevormathiak.dev/)",
+  "license": "ISC",
+  "description": "This is a website for Rachael Mathiak, LMSW, built with [Next.js](https://nextjs.org/)",
+  "main": "next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +21,7 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "formik": "^2.2.9",
+    "lucide-react": "^0.182.0",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -28,9 +33,5 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
-  },
-  "description": "This is a website for Rachael Mathiak, LMSW, built with [Next.js](https://nextjs.org/)",
-  "main": "next.config.js",
-  "author": "Trevor Mathiak <tmathiak@gmail.com> (https://www.trevormathiak.dev/)",
-  "license": "ISC"
+  }
 }
