@@ -15,7 +15,7 @@ const Contact = () => {
           </p>
           <h2 className="py-4 text-center">Get In Touch</h2>
           <div className="flex flex-col py-4">
-            <div className="mx-auto px-12 py-3 mb-6 border rounded-md border-green sm:mx-0 sm:px-0 sm:flex sm:justify-around lg:mx-20">
+            {/* <div className="mx-auto px-12 py-3 mb-6 border rounded-md border-green sm:mx-0 sm:px-0 sm:flex sm:justify-around lg:mx-20">
               <p className="flex items-center gap-3 pb-6 sm:pb-0">
                 <Icons.phone size={16} aria-hidden="true" />
                 <a
@@ -37,12 +37,12 @@ const Contact = () => {
                 >
                   3280 Beltline Ct,
                   <br />
-                  Suite 100/200,
+                  Suite 100-200,
                   <br />
                   Grand Rapids, MI 49525
                 </a>
               </p>
-            </div>
+            </div> */}
             <p className="py-4 text-center">
               Please fill out the form below, and I will get back to
               you within two business days. I look forward to speaking

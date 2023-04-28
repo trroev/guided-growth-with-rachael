@@ -96,6 +96,30 @@ const FAQ = () => (
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
+              <h5>Q: Where are you located?</h5>
+            </div>
+            <p className="text-sm md: text-justify">
+              My office for in person appointments is located at:
+              <br />
+              <a
+                href="https://goo.gl/maps/tHqEQhXzTzk6homHA"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="link to location on Google Maps"
+                className="font-medium hover:underline"
+              >
+                Northeast GR Counseling
+                <br />
+                3280 Beltline Ct,
+                <br />
+                Suite 100-200,
+                <br />
+                Grand Rapids, MI 49525
+              </a>
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <div className="pb-2">
               <h5>
                 Q: What is{" "}
                 <a
