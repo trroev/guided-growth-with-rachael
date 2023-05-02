@@ -14,9 +14,9 @@ const FAQ = () => (
               <h5>Q: What is your fee?</h5>
             </div>
             <p className="text-sm md:text-justify">
-              My rate is $165 per 50 minute session. If you&#39;re
+              My rate is $175 per 50 minute session. If you&#39;re
               interested in family therapy, these appointments are a
-              full 60 minutes and are $198 per session.
+              full 60 minutes and are $210 per session.
             </p>
           </div>
           <div className="px-4 pb-6">

@@ -20,7 +20,7 @@ const Layout = ({ children, title }: Props) => {
         />
         <meta
           name="description"
-          content="Website for Rachael Mathiak, LMSW"
+          content="Rachael Mathiak, LMSW, owner of Rachael Mathiak Therapy, LLC, provides outpatient therapy for kids, teens, adults and families. In person availability in Grand Rapids, Michigan, telehealth availablity for California, Massachusetts and Michigan."
         />
         <meta
           name="keywords"
