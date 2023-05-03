@@ -11,16 +11,6 @@ const FAQ = () => (
         <div className="flex flex-col py-4">
           <div className="px-4 pb-6">
             <div className="pb-2">
-              <h5>Q: What is your fee?</h5>
-            </div>
-            <p className="text-sm md:text-justify">
-              My rate is $175 per 50 minute session. If you&#39;re
-              interested in family therapy, these appointments are a
-              full 60 minutes and are $210 per session.
-            </p>
-          </div>
-          <div className="px-4 pb-6">
-            <div className="pb-2">
               <h5>Q: How long do most people come to therapy?</h5>
             </div>
             <p className="text-sm md:text-justify">
@@ -34,39 +24,31 @@ const FAQ = () => (
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
+              <h5>Q: What is your fee?</h5>
+            </div>
+            <p className="text-sm md:text-justify">
+              My rate is $175 per 50 minute session. If you&#39;re
+              interested in family therapy, these appointments are a
+              full 60 minutes and are $210 per session.
+            </p>
+          </div>
+          <div className="px-4 pb-6">
+            <div className="pb-2">
               <h5>Q: Do you Accept Insurance?</h5>
             </div>
             <p className="text-sm pb-3 md:text-justify">
-              Not Currently. I am considered an out-of-network
-              provider. I can offer you a monthly superbill to submit
-              to your insurance to seek reimbursement for
-              out-of-pocket costs.
+              Not currently. I am considered an out-of-network
+              provider. However, through Mentaya we can use your
+              health insurance plan information to obtain an accurate
+              estimate of how much your insurance will likely
+              reimburse you (no guarantees due to variability of
+              insurance plans, but helpful to have an estimate!).
+              Mentaya also will automatically submit claims on your
+              behalf (saving you the hassle of submitting superbills)
+              and whatever reimbursement you&#39;re eligible for will
+              be mailed directly to you. If you have further questions
+              about this service, please reach out!
             </p>
-            <p className="text-sm pb-1 md:text-justify">
-              Here are some helpful questions to ask your insurance
-              company prior to starting therapy with me:
-            </p>
-            <div className="text-sm px-8">
-              <ul className="text-justify list-disc">
-                <li>Do I have mental health benefits?</li>
-                <li>What is my deductible and has it been met?</li>
-                <li>
-                  How many psychotherapy sessions per calendar year
-                  does my plan cover?
-                </li>
-                <li>
-                  How much does my plan cover for an out-of-network
-                  provider?
-                </li>
-                <li>
-                  What is the coverage amount per therapy session?
-                </li>
-                <li>
-                  Do I need a referral from a physician to use my
-                  mental health coverage?
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="px-4 pb-6">
             <div className="pb-2">
@@ -135,18 +117,28 @@ const FAQ = () => (
               </h5>
             </div>
             <p className="text-sm md:text-justify">
-              Simple Practice is how we have our video appointments,
-              complete initial paperwork to get started, schedule
-              appointments, submit payments for your appointments and
-              receive your superbill invoices. I chose Simple Practice
+              Simple Practice is how we complete initial paperwork to
+              get started, schedule appointments, and host our
+              teletherapy video appointments. I chose Simple Practice
               for its reputation of being HIPAA compliant—meaning it
               is a secure platform that protects your confidentiality,
               data, and privacy as well as making it as easy as
-              possible for both myself and clients to schedule and
-              have appointments! You can join from the computer using
-              the appointment link that is emailed to you, or if
+              possible for both myself and you to schedule
+              appointments! You can join from the computer using the
+              appointment link that is emailed to you, or, if
               you&#39;re using a tablet/ipad or phone, you&#39;ll need
               to download the free Simple Practice App!
+              <br />
+              Current clients can use this link to access their{" "}
+              <a
+                href="https://guided-growth-with-rachael.clientsecure.me."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Simple Practice Client Portal How-to pdf link"
+                className="font-medium underline hover:font-bold"
+              >
+                Simple Practice Client Portal
+              </a>
             </p>
           </div>
           <div className="px-4 pb-6">

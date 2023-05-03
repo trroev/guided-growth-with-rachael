@@ -12,9 +12,9 @@ const Services = () => (
           <div className="border-b border-green mb-6">
             <ul className="list-disc">
               <li className="pb-4">
-                My rate is $175 per 50 minute session. If you&#39;re
-                interested in family therapy, these appointments are a
-                full 60 minutes and are $210 per session
+                My rate is $175 per 50 minute session. Family/couples
+                appointments are a full 60 minutes and are $210 per
+                session.
                 <p className="italic text-sm pt-2">
                   * Sliding scale slots available based on need and
                   schedule availability
@@ -141,12 +141,31 @@ const Services = () => (
             <p className="uppercase font-semibold tracking-widest pb-2">
               Payment
             </p>
-            <p className="pb-4">
-              Credit cards and HSA/FSA cards are accepted forms of
-              payment at this time. Please confirm with your HSA/FSA
-              benefit that behavioral health/mental health services
-              are an approved use of your funds.
-            </p>
+            <div className="pb-4">
+              <p>
+                I use a secure and HIPAA compliant platform called
+                Mentaya to charge for appointments, all appointment
+                fees are due at the time of service. You are able to
+                securely place a credit card, HSA/FSA card, or ACH
+                banking account for auto debit on file with them. I
+                offer the services of Mentaya to my clients to ease
+                stress and worry with seeking out-of-network
+                reimbursement from your health insurance plan. Mentaya
+                auto submits claims to your health insurance plan
+                following every appointment, and once you qualify for
+                reimbursement (per your health plan policy) you will
+                directly receive money back for your out of pocket
+                costs for completed appointments with me. I hope this
+                service makes seeking therapy hassle and stress free
+                so you can focus on doing the work you came to therapy
+                for!
+              </p>
+              <p className="italic text-sm pt-2">
+                * Payment Discount: Any client who uses and ACH debit
+                account for payment qualifies for a $10 decrease in
+                their fee (individuals: $165, family/couples: $200)
+              </p>
+            </div>
           </div>
           <div className="border-b border-green">
             <p className="uppercase font-semibold tracking-widest pb-2">
