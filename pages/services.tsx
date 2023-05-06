@@ -73,6 +73,10 @@ const Services = () => (
                         phobias)
                       </li>
                       <li className="pb-4">
+                        Attention-deficit/hyperactivity disorder
+                        (ADHD)
+                      </li>
+                      <li className="pb-4">
                         Depression/Mood Disorders
                       </li>
                       <li className="pb-4">
@@ -161,7 +165,7 @@ const Services = () => (
                 for!
               </p>
               <p className="italic text-sm pt-2">
-                * Payment Discount: Any client who uses and ACH debit
+                * Payment Discount: Any client who uses an ACH debit
                 account for payment qualifies for a $10 decrease in
                 their fee (individuals: $165, family/couples: $200)
               </p>
