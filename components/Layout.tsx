@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Layout = ({ children, title }: Props) => {
-  const pageTitle = `${title} | Guided Growth with Rachael`;
+  const pageTitle = `${title} | Therapy in Grand Rapids, California and Massachusetts. Rachael Mathiak Therapy, LLC`;
   return (
     <>
       <Head>

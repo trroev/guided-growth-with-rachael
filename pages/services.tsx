@@ -164,6 +164,19 @@ const Services = () => (
                 so you can focus on doing the work you came to therapy
                 for!
               </p>
+              <div className="py-4">
+                <p className="pb-2">
+                  Use this tool below to see if you qualify for
+                  reimbursement for my services:
+                </p>
+                <iframe
+                  width="100%"
+                  height={400}
+                  className="border-none rounded-2xl max-w-[600px] mx-auto block"
+                  src="https://app.mentaya.com/public/practices/Un8Ea7GcAm8XcFNL0C5X/eligibility/widget"
+                  title="Check Mentaya eligibility"
+                ></iframe>
+              </div>
               <p className="italic text-sm pt-2">
                 * Payment Discount: Any client who uses an ACH debit
                 account for payment qualifies for a $10 decrease in

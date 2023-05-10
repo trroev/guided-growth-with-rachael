@@ -3,7 +3,7 @@ import Main from "@/components/Main";
 
 export default function Home() {
   return (
-    <Layout title="HOME">
+    <Layout title="GUIDED GROWTH WITH RACHAEL">
       <Main />
     </Layout>
   );
