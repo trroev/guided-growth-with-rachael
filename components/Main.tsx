@@ -21,7 +21,7 @@ const Main = () => {
             Guided Growth with Rachael
           </h1>
           <p className="tracking-wider font-medium">
-            Rachael Mathiak | LMSW, LCSW
+            Rachael Mathiak | LMSW, LCSW, LICSW
           </p>
         </div>
       </div>

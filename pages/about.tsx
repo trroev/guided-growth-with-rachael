@@ -72,12 +72,14 @@ const About = () => (
               exacerbate anxiety and mood concerns. I&#39;m a safe
               person to discuss these concerns with.
             </p>
-            <p className="pb-3">
+            <p className="pb-6">
               I am currently providing tele-health appointments to
               residents in Michigan, California, and Massachusetts (CA
               LCSW #73823, MI LMSW # 6801110065, MA LICSW # 124554). I
               do offer some limited availability for in person
               appointments to people in the greater Grand Rapids area.
+            </p>
+            <p className="pb-3">
               I&#39;m so glad you found me and I look forward to the
               opportunity of supporting you through whatever concerns
               have brought you here!
