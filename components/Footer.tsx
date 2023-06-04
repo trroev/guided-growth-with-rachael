@@ -1,59 +1,47 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const Footer = () => (
   <footer className="m-4">
     <div className="w-full container mx-auto p-4 md:px-6 md:py-8">
-      <div className="sm:flex sm:items-center sm:justify-between">
-        <Link
-          href="/"
-          className="flex items-center mb-4 sm:mb-0 hover:scale-110 ease-in duration-300 cursor-pointer"
-        >
-          <Image
-            src="/assets/logo.svg"
-            height={48}
-            width={48}
-            alt="Guided Growth with Rachael Logo"
-            className="h-8 mr-3"
-          />
-        </Link>
-        <ul className="flex flex-wrap items-center mb-6 text-sm sm:mb-0">
-          <li>
-            <Link href="/" className="mr-4 hover:underline md:mr-6">
-              Home
-            </Link>
+      <div className="sm:flex sm:items-center sm:justify-center">
+        <ul className="flex flex-col justify-center items-center sm:flex-row mb-6 text-sm sm:mb-0">
+          <li className="py-3">
+            <Image
+              height={200}
+              width={200}
+              src="/assets/LGBTQaffirming.png"
+              alt="Logo Badge showing that Rachael Mathiak Therapy is LGBTQ affirming"
+            />
           </li>
-          <li>
-            <Link
-              href="/about"
-              className="mr-4 hover:underline md:mr-6"
+          <li className="py-3 sm:pr-3">
+            <a
+              href="https://mentalhealthmatch.com/therapist-profile/michigan/grand-rapids/rachael-mathiak"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Rachael Mathiak's profile on mentalhealthmatch.com"
             >
-              About
-            </Link>
+              <Image
+                height={100}
+                width={100}
+                src="/assets/mhm-badge.webp"
+                alt="Logo Badge showing diverse community. Find Rachael Mathiak on mentalhealthmatch.com. Therapy is for everyone."
+              />
+            </a>
           </li>
-          <li>
-            <Link
-              href="/services"
-              className="mr-4 hover:underline md:mr-6"
-            >
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/faq"
-              className="mr-4 hover:underline md:mr-6"
-            >
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="mr-4 hover:underline md:mr-6"
-            >
-              Contact
-            </Link>
+          <li className="py-3 sm:p-5">
+            <a
+              href="https://www.psychologytoday.com/profile/1127944"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Rachael Mathiak's profile on psychologytoday.com"
+            ></a>
+            <script
+              src="https://member.psychologytoday.com/verified-seal.js"
+              data-badge="10"
+              data-id="1127944"
+              data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="
+              defer
+            />
           </li>
         </ul>
       </div>
