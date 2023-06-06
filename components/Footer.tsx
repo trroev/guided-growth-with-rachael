@@ -34,14 +34,14 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Link to Rachael Mathiak's profile on psychologytoday.com"
-            ></a>
-            <script
-              src="https://member.psychologytoday.com/verified-seal.js"
-              data-badge="10"
-              data-id="1127944"
-              data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="
-              defer
-            />
+            >
+              <Image
+                height={140}
+                width={140}
+                src="/assets/logo-psychology-today.png"
+                alt="Logo Badge showing diverse community. Find Rachael Mathiak on mentalhealthmatch.com. Therapy is for everyone."
+              />
+            </a>
           </li>
         </ul>
       </div>
@@ -54,8 +54,8 @@ const Footer = () => (
             className="hover:underline"
             href="https://www.trevormathiak.dev"
             target="_blank"
-            aria-label="Link to www.trevormathiak.dev"
             rel="noopener noreferrer"
+            aria-label="Link to www.trevormathiak.dev"
           >
             Trevor Mathiak
           </a>
