@@ -105,39 +105,36 @@ const FAQ = () => (
               <h5>
                 Q: What is{" "}
                 <a
-                  href="/pdf/simple-practice-client-portal.pdf"
+                  href="https://www.sessionshealth.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Simple Practice Client Portal How-to pdf link"
+                  aria-label="Link to Sessions Health website"
                   className="font-medium underline hover:font-bold"
                 >
-                  Simple Practice
+                  Sessions Health
                 </a>
                 ?
               </h5>
             </div>
             <p className="text-sm md:text-justify">
-              Simple Practice is how we complete initial paperwork to
+              Sessions Health is how we complete initial paperwork to
               get started, schedule appointments, and host our
-              teletherapy video appointments. I chose Simple Practice
+              teletherapy video appointments. I chose Sessions Health
               for its reputation of being HIPAA compliant—meaning it
               is a secure platform that protects your confidentiality,
               data, and privacy as well as making it as easy as
               possible for both myself and you to schedule
-              appointments! You can join from the computer using the
-              appointment link that is emailed to you, or, if
-              you&#39;re using a tablet/ipad or phone, you&#39;ll need
-              to download the free Simple Practice App!
+              appointments!
               <br />
               Current clients can use this link to access their{" "}
               <a
-                href="https://guided-growth-with-rachael.clientsecure.me."
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Simple Practice Client Portal How-to pdf link"
+                aria-label="Sessions Health Client Portal"
                 className="font-medium underline hover:font-bold"
               >
-                Simple Practice Client Portal
+                Sessions Health Client Portal
               </a>
             </p>
           </div>
