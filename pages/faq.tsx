@@ -128,7 +128,7 @@ const FAQ = () => (
               <br />
               Current clients can use this link to access their{" "}
               <a
-                href=""
+                href="https://guided-growth-with-rachael.sessionshealth.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Sessions Health Client Portal"
