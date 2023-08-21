@@ -45,11 +45,11 @@ const Services = () => (
                 for adults navigating difficult family
                 circumstances/conflict)
               </li>
-              <li className="pb-4">
+              {/* <li className="pb-4">
                 <span className="italic">Coming soon: </span>Couples
                 Therapy. I am currently working on my Level 1 & 2
                 Gottman Method certifications
-              </li>
+              </li> */}
             </ul>
           </div>
           <div>
@@ -132,10 +132,10 @@ const Services = () => (
                     <li className="pb-4">Interpersonal</li>
                     <li className="pb-4">Strengths-Based</li>
                     <li className="pb-4">Humanistic Approach</li>
-                    <li className="pb-4">
+                    {/* <li className="pb-4">
                       <span className="italic">Coming Soon: </span>
                       Gottman Method Level 1 & 2 for Couples
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -177,11 +177,6 @@ const Services = () => (
                   title="Check Mentaya eligibility"
                 ></iframe>
               </div>
-              <p className="italic text-sm pt-2">
-                * Payment Discount: Any client who uses an ACH debit
-                account for payment qualifies for a $10 decrease in
-                their fee (individuals: $165, family/couples: $200)
-              </p>
             </div>
           </div>
           <div className="border-b border-green">
