@@ -1,12 +1,14 @@
 import { Formik, Form, FormikHelpers } from "formik";
 import * as Yup from "yup";
-import { FormInput, TextArea } from "./FormInput";
+import { FormDropdrown, FormInput, TextArea } from "./FormInput";
 import { useState } from "react";
 
 interface Values {
   fullName: string;
   email: string;
   phoneNumber: string;
+  age: number;
+  state: string;
   message: string;
 }
 
@@ -17,7 +19,60 @@ const FormikForm = () => {
   const [messageState, setMessageState] = useState<string>("");
 
   const phoneRegEx =
-    /^(?:\+1|1)?(?:\d{10}|\d{3}(?:[-.\s])\d{3}(?:[-.\s])\d{4}|\(\d{3}\)(?:[-.\s])\d{3}(?:[-.\s])\d{4}|\d{3}(?:[-.\s])\d{4})$/;
+    /^(?:\+?1[-.\s]?)?(?:\d{10}|\d{3}[-.\s]\d{3}[-.\s]\d{4}|\(\d{3}\)[-.\s]?\d{3}[-.\s]?\d{4}|\d{3}[-.\s]\d{4})$/;
+
+  const stateOptions = [
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
+  ];
 
   return (
     <Formik
@@ -25,6 +80,8 @@ const FormikForm = () => {
         fullName: "",
         email: "",
         phoneNumber: "",
+        age: 0,
+        state: "",
         message: "",
       }}
       validationSchema={Yup.object({
@@ -104,11 +161,25 @@ const FormikForm = () => {
                 placeholder="1-555-555-5555"
               />
             </div>
+            <div className="flex flex-col">
+              <FormInput
+                label="Age"
+                name="age"
+                type="number"
+                placeholder="30"
+              />
+              <FormDropdrown
+                label="State"
+                name="state"
+                options={stateOptions}
+                placeholder="Please select a state"
+              />
+            </div>
           </div>
           <TextArea
             label="Message"
             name="message"
-            rows={10}
+            rows={3}
             placeholder="Your message here..."
           />
           <button className="w-full p-4 mt-4">{buttonText}</button>
