@@ -6,6 +6,7 @@ import { useState } from "react";
 interface Values {
   fullName: string;
   email: string;
+  phoneNumber: string;
   message: string;
 }
 
@@ -15,11 +16,15 @@ const FormikForm = () => {
   const [success, setSuccess] = useState<boolean>(false);
   const [messageState, setMessageState] = useState<string>("");
 
+  const phoneRegEx =
+    /^(?:\+1|1)?(?:\d{10}|\d{3}(?:[-.\s])\d{3}(?:[-.\s])\d{4}|\(\d{3}\)(?:[-.\s])\d{3}(?:[-.\s])\d{4}|\d{3}(?:[-.\s])\d{4})$/;
+
   return (
     <Formik
       initialValues={{
         fullName: "",
         email: "",
+        phoneNumber: "",
         message: "",
       }}
       validationSchema={Yup.object({
@@ -29,8 +34,11 @@ const FormikForm = () => {
         email: Yup.string()
           .email("Invalid email address")
           .required("Please provide an email address"),
+        phoneNumber: Yup.string()
+          .matches(phoneRegEx, "Please enter a valid phone number")
+          .required("A phone number is required"),
         message: Yup.string()
-          .max(600, "Message must be 600 characters or less")
+          .max(150, "Message must be 150 characters or less")
           .required("Please provide a message"),
       })}
       onSubmit={async (
@@ -86,6 +94,14 @@ const FormikForm = () => {
                 name="email"
                 type="email"
                 placeholder="jane.doe@gmail.com"
+              />
+            </div>
+            <div className="flex flex-col">
+              <FormInput
+                label="Phone Number"
+                name="phoneNumber"
+                type="text"
+                placeholder="1-555-555-5555"
               />
             </div>
           </div>
