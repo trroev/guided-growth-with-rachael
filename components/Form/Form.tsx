@@ -92,6 +92,7 @@ const FormikForm = () => {
             email: values.email,
             phoneNumber: values.phoneNumber,
             age: values.age,
+            state: values.state,
             reason: values.reason,
             message: values.message,
             terms: {
