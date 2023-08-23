@@ -9,6 +9,7 @@ interface Values {
   phoneNumber: string;
   age: number;
   state: string;
+  reason: string;
   message: string;
 }
 
@@ -21,58 +22,7 @@ const FormikForm = () => {
   const phoneRegEx =
     /^(?:\+?1[-.\s]?)?(?:\d{10}|\d{3}[-.\s]\d{3}[-.\s]\d{4}|\(\d{3}\)[-.\s]?\d{3}[-.\s]?\d{4}|\d{3}[-.\s]\d{4})$/;
 
-  const stateOptions = [
-    "Alabama",
-    "Alaska",
-    "Arizona",
-    "Arkansas",
-    "California",
-    "Colorado",
-    "Connecticut",
-    "Delaware",
-    "Florida",
-    "Georgia",
-    "Hawaii",
-    "Idaho",
-    "Illinois",
-    "Indiana",
-    "Iowa",
-    "Kansas",
-    "Kentucky",
-    "Louisiana",
-    "Maine",
-    "Maryland",
-    "Massachusetts",
-    "Michigan",
-    "Minnesota",
-    "Mississippi",
-    "Missouri",
-    "Montana",
-    "Nebraska",
-    "Nevada",
-    "New Hampshire",
-    "New Jersey",
-    "New Mexico",
-    "New York",
-    "North Carolina",
-    "North Dakota",
-    "Ohio",
-    "Oklahoma",
-    "Oregon",
-    "Pennsylvania",
-    "Rhode Island",
-    "South Carolina",
-    "South Dakota",
-    "Tennessee",
-    "Texas",
-    "Utah",
-    "Vermont",
-    "Virginia",
-    "Washington",
-    "West Virginia",
-    "Wisconsin",
-    "Wyoming",
-  ];
+  const stateOptions = ["California", "Massachusetts", "Michigan"];
 
   return (
     <Formik
@@ -82,6 +32,7 @@ const FormikForm = () => {
         phoneNumber: "",
         age: 0,
         state: "",
+        reason: "",
         message: "",
       }}
       validationSchema={Yup.object({
@@ -94,6 +45,9 @@ const FormikForm = () => {
         phoneNumber: Yup.string()
           .matches(phoneRegEx, "Please enter a valid phone number")
           .required("A phone number is required"),
+        reason: Yup.string()
+          .max(150, "Message must be 150 characters or less")
+          .required("Please provide a message"),
         message: Yup.string()
           .max(150, "Message must be 150 characters or less")
           .required("Please provide a message"),
@@ -111,6 +65,9 @@ const FormikForm = () => {
           body: JSON.stringify({
             fullName: values.fullName,
             email: values.email,
+            phoneNumber: values.phoneNumber,
+            age: values.age,
+            reason: values.reason,
             message: values.message,
           }),
         });
@@ -136,48 +93,54 @@ const FormikForm = () => {
       {({ isSubmitting }) => (
         <Form>
           {isSubmitting && <div>Loading...</div>}
-          <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-            <div className="flex flex-col">
-              <FormInput
-                label="Full Name"
-                name="fullName"
-                type="text"
-                placeholder="Jane Doe"
-              />
-            </div>
-            <div className="flex flex-col">
-              <FormInput
-                label="Email Address"
-                name="email"
-                type="email"
-                placeholder="jane.doe@gmail.com"
-              />
-            </div>
-            <div className="flex flex-col">
-              <FormInput
-                label="Phone Number"
-                name="phoneNumber"
-                type="text"
-                placeholder="1-555-555-5555"
-              />
-            </div>
-            <div className="flex flex-col">
-              <FormInput
-                label="Age"
-                name="age"
-                type="number"
-                placeholder="30"
-              />
-              <FormDropdrown
-                label="State"
-                name="state"
-                options={stateOptions}
-                placeholder="Please select a state"
-              />
-            </div>
+          {/* <div className="grid md:grid-cols-2 gap-4 w-full py-2"> */}
+          <div className="flex flex-col">
+            <FormInput
+              label="Full Name"
+              name="fullName"
+              type="text"
+              placeholder="Jane Doe"
+            />
           </div>
+          <div className="flex flex-col">
+            <FormInput
+              label="Email Address"
+              name="email"
+              type="email"
+              placeholder="jane.doe@gmail.com"
+            />
+          </div>
+          <div className="flex flex-col">
+            <FormInput
+              label="Phone Number"
+              name="phoneNumber"
+              type="text"
+              placeholder="1-555-555-5555"
+            />
+          </div>
+          <div className="flex flex-col">
+            <FormInput
+              label="Age"
+              name="age"
+              type="number"
+              placeholder="30"
+            />
+            <FormDropdrown
+              label="State"
+              name="state"
+              options={stateOptions}
+              placeholder="Please select a state"
+            />
+          </div>
+          {/* </div> */}
           <TextArea
-            label="Message"
+            label="Reason for Seeking Services"
+            name="reason"
+            rows={3}
+            placeholder="Your message here..."
+          />
+          <TextArea
+            label="Anything Else You Would Like Me to Know"
             name="message"
             rows={3}
             placeholder="Your message here..."

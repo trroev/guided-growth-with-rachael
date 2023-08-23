@@ -84,13 +84,13 @@ const Contact = () => {
               </p>
             </div> */}
         </div>
-        <p className="py-4 text-center">
+        <p className="p-4 text-center">
           Please fill out the form below, and I will get back to you
           within two business days. I look forward to speaking with
           you!
         </p>
         <div className="w-full h-auto lg:p-4">
-          <div className="p-4">
+          <div className="mx-4 sm:mx-10 md:mx-20 lg:mx-44">
             <FormikForm />
           </div>
         </div>

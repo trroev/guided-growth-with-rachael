@@ -25,7 +25,7 @@ export const FormInput = ({ label, ...props }: InputProps) => {
   const [field, meta] = useField(props);
 
   return (
-    <>
+    <div className="flex flex-col py-2">
       <label
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
@@ -44,7 +44,7 @@ export const FormInput = ({ label, ...props }: InputProps) => {
           {meta.error}
         </div>
       ) : null}
-    </>
+    </div>
   );
 };
 
