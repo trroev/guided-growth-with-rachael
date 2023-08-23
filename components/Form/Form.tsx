@@ -1,6 +1,11 @@
 import { Formik, Form, FormikHelpers } from "formik";
 import * as Yup from "yup";
-import { FormDropdrown, FormInput, TextArea } from "./FormInput";
+import {
+  FormCheckbox,
+  FormDropdrown,
+  FormInput,
+  TextArea,
+} from "./FormInput";
 import { useState } from "react";
 
 interface Values {
@@ -14,8 +19,7 @@ interface Values {
 }
 
 const FormikForm = () => {
-  const [buttonText, setButtonText] =
-    useState<string>("Send Message");
+  const [buttonText, setButtonText] = useState<string>("Submit Form");
   const [success, setSuccess] = useState<boolean>(false);
   const [messageState, setMessageState] = useState<string>("");
 
@@ -145,6 +149,39 @@ const FormikForm = () => {
             rows={3}
             placeholder="Your message here..."
           />
+          <FormCheckbox
+            label="I understand that Rachael Mathiak Therapy, LLC is considered an out of network provider, which means I am responsible for the full fee at the time of the appointment."
+            name="term1"
+          />
+          <FormCheckbox
+            label="I understand that Rachael Mathiak Therapy, LLC works with Mentaya to submit claims on my behalf for out-of-network reimbursement from my insurance, if applicable."
+            name="term2"
+          />
+          <FormCheckbox
+            label="I am aware that the fees for service are $175 for and individual session, and $210 for couples or family therapy."
+            name="term3"
+          />
+          <FormCheckbox
+            label="I understand that if I schedule an appointment, and later need to reschedule or cancel, I must do so with at least 48 hours of notice, or I will be charged the full appointment fee due to late cancellation or not showing up."
+            name="term4"
+          />
+          <div>
+            <p className="text-sm font-medium uppercase underline pl-4">
+              Terms of Use:
+            </p>
+            <p className="text-sm px-4">
+              By submitting this form via this website, you
+              acknowledge and accept the risk of sharing your
+              health-related information via this unencrypted and
+              electronic messaging, and wish to continue despite those
+              risks. By checking &quot;Agree&quot;, you agree to hold
+              Rachael Mathiak Therapy, LLC and the website developer
+              harmless for unauthorized use, disclosure or access of
+              your protected health information sent via this
+              electronic means.
+            </p>
+          </div>
+          <FormCheckbox label="Agree" name="agree" />
           <button className="w-full p-4 mt-4">{buttonText}</button>
           <div>
             <p className="text-success uppercase text-sm mt-4">

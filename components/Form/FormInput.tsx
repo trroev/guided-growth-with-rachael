@@ -21,6 +21,11 @@ type TextAreaProps = JSX.IntrinsicElements["textarea"] & {
   placeholder: string;
 };
 
+type CheckboxProps = {
+  label: string;
+  name: string;
+};
+
 export const FormInput = ({ label, ...props }: InputProps) => {
   const [field, meta] = useField(props);
 
@@ -106,6 +111,30 @@ export const TextArea = ({ label, ...props }: TextAreaProps) => {
         {...field}
         {...props}
       />
+      {meta.touched && meta.error ? (
+        <div className="text-red uppercase text-sm mt-2">
+          {meta.error}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
+  const [field, meta] = useField({ ...props, type: "checkbox" });
+
+  return (
+    <div className="flex items-center py-2">
+      <input
+        type="checkbox"
+        className="mr-2"
+        {...field}
+        {...props}
+        id={props.name}
+      />
+      <label htmlFor={props.name} className="text-sm">
+        {label}
+      </label>
       {meta.touched && meta.error ? (
         <div className="text-red uppercase text-sm mt-2">
           {meta.error}
