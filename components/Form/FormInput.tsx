@@ -127,22 +127,24 @@ export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
   const [field, meta] = useField({ ...props, type: "checkbox" });
 
   return (
-    <div className="flex items-center py-2">
-      <input
-        type="checkbox"
-        className="mr-2 accent-green"
-        {...field}
-        {...props}
-        id={props.name}
-      />
-      <label htmlFor={props.name} className="text-sm">
-        {label}
-      </label>
+    <>
+      <div className="flex items-center py-2">
+        <input
+          type="checkbox"
+          className="mr-2 accent-green"
+          {...field}
+          {...props}
+          id={props.name}
+        />
+        <label htmlFor={props.name} className="text-sm">
+          {label}
+        </label>
+      </div>
       {meta.touched && meta.error ? (
-        <div className="text-red uppercase text-sm mt-2">
+        <div className="text-red uppercase text-sm pl-3 mb-3">
           {meta.error}
         </div>
       ) : null}
-    </div>
+    </>
   );
 };

@@ -68,11 +68,12 @@ const FormikForm = () => {
           150,
           "Message must be 150 characters or less"
         ),
-        term1: Yup.boolean().required("Please confirm"),
-        term2: Yup.boolean().required("Please confirm"),
-        term3: Yup.boolean().required("Please confirm"),
-        term4: Yup.boolean().required("Please confirm"),
-        agree: Yup.boolean().required(
+        term1: Yup.boolean().oneOf([true], "Please confirm"),
+        term2: Yup.boolean().oneOf([true], "Please confirm"),
+        term3: Yup.boolean().oneOf([true], "Please confirm"),
+        term4: Yup.boolean().oneOf([true], "Please confirm"),
+        agree: Yup.boolean().oneOf(
+          [true],
           "Please agree to terms before submitting"
         ),
       })}
@@ -189,7 +190,7 @@ const FormikForm = () => {
             name="term2"
           />
           <FormCheckbox
-            label="I am aware that the fees for service are $175 for and individual session, and $210 for couples or family therapy."
+            label="I am aware that the fees for service are $175 for an individual session, and $210 for couples or family therapy."
             name="term3"
           />
           <FormCheckbox
