@@ -16,6 +16,11 @@ interface Values {
   state: string;
   reason: string;
   message: string;
+  term1: boolean;
+  term2: boolean;
+  term3: boolean;
+  term4: boolean;
+  agree: boolean;
 }
 
 const FormikForm = () => {
@@ -38,6 +43,11 @@ const FormikForm = () => {
         state: "",
         reason: "",
         message: "",
+        term1: false,
+        term2: false,
+        term3: false,
+        term4: false,
+        agree: false,
       }}
       validationSchema={Yup.object({
         fullName: Yup.string()
@@ -49,12 +59,22 @@ const FormikForm = () => {
         phoneNumber: Yup.string()
           .matches(phoneRegEx, "Please enter a valid phone number")
           .required("A phone number is required"),
-        reason: Yup.string()
-          .max(150, "Message must be 150 characters or less")
-          .required("Please provide a message"),
-        message: Yup.string()
-          .max(150, "Message must be 150 characters or less")
-          .required("Please provide a message"),
+        state: Yup.string().required("Please select a state"),
+        reason: Yup.string().max(
+          150,
+          "Message must be 150 characters or less"
+        ),
+        message: Yup.string().max(
+          150,
+          "Message must be 150 characters or less"
+        ),
+        term1: Yup.boolean().required("Please confirm"),
+        term2: Yup.boolean().required("Please confirm"),
+        term3: Yup.boolean().required("Please confirm"),
+        term4: Yup.boolean().required("Please confirm"),
+        agree: Yup.boolean().required(
+          "Please agree to terms before submitting"
+        ),
       })}
       onSubmit={async (
         values: Values,
@@ -73,6 +93,13 @@ const FormikForm = () => {
             age: values.age,
             reason: values.reason,
             message: values.message,
+            terms: {
+              term1: values.term1,
+              term2: values.term2,
+              term3: values.term3,
+              term4: values.term4,
+              agree: values.agree,
+            },
           }),
         });
         const data = await res.json();
@@ -104,6 +131,7 @@ const FormikForm = () => {
               name="fullName"
               type="text"
               placeholder="Jane Doe"
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -112,6 +140,7 @@ const FormikForm = () => {
               name="email"
               type="email"
               placeholder="jane.doe@gmail.com"
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -120,6 +149,7 @@ const FormikForm = () => {
               name="phoneNumber"
               type="text"
               placeholder="1-555-555-5555"
+              required
             />
           </div>
           <div className="flex flex-col">
@@ -134,6 +164,7 @@ const FormikForm = () => {
               name="state"
               options={stateOptions}
               placeholder="Please select a state"
+              required
             />
           </div>
           {/* </div> */}

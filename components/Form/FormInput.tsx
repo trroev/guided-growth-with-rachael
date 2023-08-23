@@ -28,6 +28,7 @@ type CheckboxProps = {
 
 export const FormInput = ({ label, ...props }: InputProps) => {
   const [field, meta] = useField(props);
+  const isRequired = props.required || (meta.touched && meta.error);
 
   return (
     <div className="flex flex-col py-2">
@@ -35,7 +36,7 @@ export const FormInput = ({ label, ...props }: InputProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label} <span className="text-red">*</span>
+        {label} {isRequired && <span className="text-red">*</span>}
       </label>
       <input
         className={`border rounded-lg border-green p-3 flex bg-green/10 outline-none ${
@@ -59,6 +60,7 @@ export const FormDropdrown = ({
   ...props
 }: DropdownProps) => {
   const [field, meta] = useField(props);
+  const isRequired = props.required || (meta.touched && meta.error);
 
   return (
     <div className="flex flex-col py-2">
@@ -66,7 +68,7 @@ export const FormDropdrown = ({
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label} <span className="text-red">*</span>
+        {label} {isRequired && <span className="text-red">*</span>}
       </label>
       <select
         className={`border rounded-lg p-3 border-green bg-green/10 outline-none ${
@@ -95,6 +97,7 @@ export const FormDropdrown = ({
 
 export const TextArea = ({ label, ...props }: TextAreaProps) => {
   const [field, meta] = useField(props);
+  const isRequired = props.required || (meta.touched && meta.error);
 
   return (
     <div className="flex flex-col py-2">
@@ -102,7 +105,7 @@ export const TextArea = ({ label, ...props }: TextAreaProps) => {
         htmlFor={props.id || props.name}
         className="uppercase text-sm py-2"
       >
-        {label} <span className="text-red">*</span>
+        {label} {isRequired && <span className="text-red">*</span>}
       </label>
       <textarea
         className={`border rounded-lg p-3 border-green bg-green/10 outline-none ${
@@ -127,7 +130,7 @@ export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
     <div className="flex items-center py-2">
       <input
         type="checkbox"
-        className="mr-2"
+        className="mr-2 accent-green"
         {...field}
         {...props}
         id={props.name}
