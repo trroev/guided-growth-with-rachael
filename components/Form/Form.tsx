@@ -198,7 +198,19 @@ const FormikForm = () => {
             label="I understand that if I schedule an appointment, and later need to reschedule or cancel, I must do so with at least 48 hours of notice, or I will be charged the full appointment fee due to late cancellation or not showing up."
             name="term4"
           />
-          <div>
+          <FormCheckbox
+            label='By submitting this form via this website, you
+              acknowledge and accept the risk of sharing your
+              health-related information via this unencrypted and
+              electronic messaging, and wish to continue despite those
+              risks. By checking "Agree", you agree to hold
+              Rachael Mathiak Therapy, LLC and the website developer
+              harmless for unauthorized use, disclosure or access of
+              your protected health information sent via this
+              electronic means.'
+            name="agree"
+          />
+          {/* <div>
             <p className="text-sm font-medium uppercase underline pl-4">
               Terms of Use:
             </p>
@@ -213,8 +225,8 @@ const FormikForm = () => {
               your protected health information sent via this
               electronic means.
             </p>
-          </div>
-          <FormCheckbox label="Agree" name="agree" />
+          </div> */}
+
           <button className="w-full p-4 mt-4">{buttonText}</button>
           <div>
             <p className="text-success uppercase text-sm mt-4">

@@ -77,7 +77,7 @@ export const FormDropdrown = ({
         {...field}
         {...props}
       >
-        <option value="" disabled selected>
+        <option value="" disabled>
           {props.placeholder}
         </option>
         {options.map((option) => (
@@ -128,17 +128,25 @@ export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
 
   return (
     <>
-      <div className="flex items-center py-2">
-        <input
-          type="checkbox"
-          className="mr-2 accent-green"
-          {...field}
-          {...props}
-          id={props.name}
-        />
-        <label htmlFor={props.name} className="text-sm">
-          {label}
-        </label>
+      <div className="flex w-full justify-center items-center p-4">
+        <div className="flex items-start space-x-2">
+          <input
+            type="checkbox"
+            className="mr-2 accent-green shrink-0"
+            {...field}
+            {...props}
+            id={props.name}
+          />
+          <div className="grid gap-1 5 leading-none">
+            <label
+              htmlFor={props.name}
+              className="text-sm leading-none"
+            >
+              Accept
+            </label>
+            <p className="text-sm font-light">{label}</p>
+          </div>
+        </div>
       </div>
       {meta.touched && meta.error ? (
         <div className="text-red uppercase text-sm pl-3 mb-3">
