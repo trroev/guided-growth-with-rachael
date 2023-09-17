@@ -126,7 +126,6 @@ const FormikForm = () => {
       {({ isSubmitting }) => (
         <Form>
           {isSubmitting && <div>Loading...</div>}
-          {/* <div className="grid md:grid-cols-2 gap-4 w-full py-2"> */}
           <div className="flex flex-col">
             <FormInput
               label="Full Name"
@@ -169,7 +168,6 @@ const FormikForm = () => {
               required
             />
           </div>
-          {/* </div> */}
           <TextArea
             label="Reason for Seeking Services"
             name="reason"
@@ -210,23 +208,6 @@ const FormikForm = () => {
               electronic means.'
             name="agree"
           />
-          {/* <div>
-            <p className="text-sm font-medium uppercase underline pl-4">
-              Terms of Use:
-            </p>
-            <p className="text-sm px-4">
-              By submitting this form via this website, you
-              acknowledge and accept the risk of sharing your
-              health-related information via this unencrypted and
-              electronic messaging, and wish to continue despite those
-              risks. By checking &quot;Agree&quot;, you agree to hold
-              Rachael Mathiak Therapy, LLC and the website developer
-              harmless for unauthorized use, disclosure or access of
-              your protected health information sent via this
-              electronic means.
-            </p>
-          </div> */}
-
           <button className="w-full p-4 mt-4">{buttonText}</button>
           <div>
             <p className="text-success uppercase text-sm mt-4">

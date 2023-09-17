@@ -54,36 +54,7 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        <div className="flex flex-col py-4">
-          {/* <div className="mx-auto px-12 py-3 mb-6 border rounded-md border-green sm:mx-0 sm:px-0 sm:flex sm:justify-around lg:mx-20">
-              <p className="flex items-center gap-3 pb-6 sm:pb-0">
-                <Icons.phone size={16} aria-hidden="true" />
-                <a
-                  href="tel:6163305822"
-                  aria-label="link to make a phone call to Rachael Mathiak at 6162821573"
-                  className="hover:underline"
-                >
-                  (616) 330-5822
-                </a>
-              </p>
-              <p className="flex items-center gap-3">
-                <Icons.map size={16} aria-hidden="true" />
-                <a
-                  href="https://goo.gl/maps/tHqEQhXzTzk6homHA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="link to location on Google Maps"
-                  className="hover:underline"
-                >
-                  3280 Beltline Ct,
-                  <br />
-                  Suite 100-200,
-                  <br />
-                  Grand Rapids, MI 49525
-                </a>
-              </p>
-            </div> */}
-        </div>
+        <div className="flex flex-col py-4"></div>
         <p className="p-4 text-center">
           Please fill out the form below, and I will get back to you
           within two business days. I look forward to speaking with

@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { Icons } from "./Icons";
+import Link from "next/link";
 
 const Footer = () => (
-  <footer className="m-4">
-    <div className="w-full container mx-auto p-4 md:px-6 md:py-8">
+  <footer className="pt-12">
+    <div className="container mx-auto px-[4vw] sm:px-10 md:px-12 lg:px-16 xl:px-24">
       <div className="sm:flex sm:items-center sm:justify-center">
-        <ul className="flex flex-col justify-center items-center sm:flex-row mb-6 text-sm sm:mb-0">
+        <ul className="flex flex-col justify-center items-center mb-6 text-sm gap-3 sm:flex-row sm:mb-0 sm:gap-6 md:gap-10 lg:gap-16">
           <li className="py-3">
             <Image
               height={200}
@@ -46,20 +48,78 @@ const Footer = () => (
         </ul>
       </div>
       <hr className="my-6 border-green sm:mx-auto lg:my-8" />
-      <div className="flex flex-col sm:flex-row justify-between text-sm">
-        <p className="block pb-2">Rachael Mathiak Therapy, LLC</p>
-        <p className="block">
-          &copy; 2023{" "}
-          <a
-            className="hover:underline"
-            href="https://www.trevormathiak.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to www.trevormathiak.dev"
-          >
-            Trevor Mathiak
-          </a>
-        </p>
+      <div className="border-b border-b-green pb-8">
+        <ul className="flex flex-col sm:flex-row justify-center items-center">
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/about">About</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/services">Services</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/faq">FAQ</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/terms-of-use">Terms of Use</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="flex flex-col sm:flex-row justify-between gap-6 py-4">
+        <div className="block pb-2 space-y-2">
+          <p className="text-sm font-medium leading-none">
+            Rachael Mathiak Therapy, LLC
+          </p>
+          <div className="flex gap-2">
+            <Icons.phone size={16} aria-hidden="true" />
+            <a
+              href="tel:6163305822"
+              aria-label="link to make a phone call to Rachael Mathiak at 6162821573"
+              className="hover:underline"
+            >
+              <p className="text-sm font-light">(616) 330-5822</p>
+            </a>
+          </div>
+          <div className="flex gap-2">
+            <Icons.map size={16} aria-hidden="true" />
+            <a
+              href="https://goo.gl/maps/tHqEQhXzTzk6homHA"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="link to location on Google Maps"
+              className="hover:underline"
+            >
+              <p className="text-sm font-light">
+                Northeast GR Counseling
+                <br />
+                3280 Beltline Ct,
+                <br />
+                Suite 100-200,
+                <br />
+                Grand Rapids, MI 49525
+              </p>
+            </a>
+          </div>
+        </div>
+        <div className="block pb-2">
+          <p className="text-sm font-medium leading-none">
+            &copy; 2023{" "}
+            <a
+              className="hover:underline"
+              href="https://www.trevormathiak.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to www.trevormathiak.dev"
+            >
+              Trevor Mathiak
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>

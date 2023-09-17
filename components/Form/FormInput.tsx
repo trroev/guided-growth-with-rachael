@@ -137,7 +137,7 @@ export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
             {...props}
             id={props.name}
           />
-          <div className="grid gap-1 5 leading-none">
+          <div className="grid gap-1.5 leading-none">
             <label
               htmlFor={props.name}
               className="text-sm leading-none"
