@@ -66,7 +66,7 @@ const Footer = () => (
             <Link href="/contact">Contact</Link>
           </li>
           <li className="sm:ml-10 hover:underline">
-            <Link href="/terms-of-use">Terms of Service</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
           </li>
           <li className="sm:ml-10 hover:underline">
             <Link href="/privacy-policy">Privacy Policy</Link>
