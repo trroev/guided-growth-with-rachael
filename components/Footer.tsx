@@ -49,7 +49,7 @@ const Footer = () => (
       </div>
       <hr className="my-6 border-green sm:mx-auto lg:my-8" />
       <div className="border-b border-b-green pb-8">
-        <ul className="flex flex-col sm:flex-row justify-center items-center">
+        <ul className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-2">
           <li className="sm:ml-10 hover:underline">
             <Link href="/">Home</Link>
           </li>
@@ -67,6 +67,12 @@ const Footer = () => (
           </li>
           <li className="sm:ml-10 hover:underline">
             <Link href="/terms-of-use">Terms of Service</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </li>
+          <li className="sm:ml-10 hover:underline">
+            <Link href="/disclaimer">Disclaimer</Link>
           </li>
         </ul>
       </div>
