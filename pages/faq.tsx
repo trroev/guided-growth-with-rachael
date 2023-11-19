@@ -27,9 +27,12 @@ const FAQ = () => (
               <h5>Q: What is your fee?</h5>
             </div>
             <p className="text-sm md:text-justify">
-              My rate is $175 per 50 minute session. If you&#39;re
-              interested in family therapy, these appointments are a
-              full 60 minutes and are $210 per session.
+              My rate is $175 for individual sessions. For couples,
+              family therapy, or parent-coaching, my rate is $210 per
+              session. I do have a limited number of sliding scale
+              slots available based on need and schedule availability.
+              Please reach out to discuss if this is something
+              you&#39;re interested in.
             </p>
           </div>
           <div className="px-4 pb-6">

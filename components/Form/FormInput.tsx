@@ -128,7 +128,7 @@ export const FormCheckbox = ({ label, ...props }: CheckboxProps) => {
 
   return (
     <>
-      <div className="flex w-full justify-center items-center p-4">
+      <div className="flex w-full items-center p-4">
         <div className="flex items-start space-x-2">
           <input
             type="checkbox"
