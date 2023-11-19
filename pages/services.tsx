@@ -12,9 +12,10 @@ const Services = () => (
           <div className="border-b border-green mb-6">
             <ul className="list-disc">
               <li className="pb-4">
-                My rate is $175 per 50 minute session. Family/couples
-                appointments are a full 60 minutes and are $210 per
-                session.
+                Individual therapy, 1:1 - $175 per session
+              </li>
+              <li className="pb-4">
+                Family, couples, parent-coaching - $210 per session
                 <p className="italic text-sm pt-2">
                   * Sliding scale slots available based on need and
                   schedule availability
@@ -54,11 +55,6 @@ const Services = () => (
           </div>
           <div>
             <div className="border-b border-green mb-6">
-              <p className="pb-12">
-                I offer general support which means I am qualified to
-                address a wide range of concerns. Below are what I
-                especially enjoy helping people work through:
-              </p>
               <div className="md:grid grid-cols-2 gap-6 md:gap-12 lg:gap-24">
                 <div className="pb-6">
                   <p className="uppercase font-semibold tracking-widest pb-2">
