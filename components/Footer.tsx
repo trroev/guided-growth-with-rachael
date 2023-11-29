@@ -65,9 +65,6 @@ const Footer: FC<FooterProps> = ({ items }) => (
       </div>
       <div className="flex flex-col sm:flex-row justify-between gap-6 py-4">
         <div className="block pb-2 space-y-2">
-          <p className="text-sm font-medium leading-none">
-            Rachael Mathiak Therapy, LLC
-          </p>
           <div className="flex gap-2">
             <Icons.phone size={16} aria-hidden="true" />
             <a
@@ -101,16 +98,7 @@ const Footer: FC<FooterProps> = ({ items }) => (
         </div>
         <div className="block pb-2">
           <p className="text-sm font-medium leading-none">
-            &copy; 2023{" "}
-            <a
-              className="hover:underline"
-              href="https://www.trevormathiak.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to www.trevormathiak.dev"
-            >
-              Trevor Mathiak
-            </a>
+            &copy; 2023 Rachael Mathiak Therapy, LLC
           </p>
         </div>
       </div>
