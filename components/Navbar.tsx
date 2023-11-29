@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { NavLink } from "@/types";
 
-const Navbar = () => {
-  const [nav, setNav] = useState<boolean>(false);
+interface NavbarProps {
+  items?: NavLink[];
+}
+
+const Navbar: FC<NavbarProps> = ({ items }) => {
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  const hamburgerLine: string =
+  const hamburgerLine =
     "h-0.5 w-9 my-1 rounded-full transition ease transform duration-300 bg-green";
 
   return (
@@ -32,21 +37,23 @@ const Navbar = () => {
               </Link>
               <div>
                 <ul className="hidden md:flex">
-                  <li className="ml-10 hover:underline">
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li className="ml-10 hover:underline">
-                    <Link href="/about">About</Link>
-                  </li>
-                  <li className="ml-10 hover:underline">
-                    <Link href="/services">Services</Link>
-                  </li>
-                  <li className="ml-10 hover:underline">
-                    <Link href="/faq">FAQ</Link>
-                  </li>
-                  <li className="ml-10 hover:underline">
-                    <Link href="/contact">Contact</Link>
-                  </li>
+                  {items
+                    ?.filter(
+                      (item) =>
+                        ![
+                          "Terms of Service",
+                          "Privacy Policy",
+                          "Disclaimer",
+                        ].includes(item.title)
+                    )
+                    .map((item) => (
+                      <li
+                        className="ml-10 hover:underline"
+                        key={item.id}
+                      >
+                        <Link href={item.href}>{item.title}</Link>
+                      </li>
+                    ))}
                 </ul>
               </div>
               <div className="md:hidden flex items-center">
@@ -94,29 +101,26 @@ const Navbar = () => {
               } transition-transform duration-300 ease-in-out filter`}
             >
               <div className="flex flex-col justify-center items-center mt-28">
-                <Link href="/" onClick={() => setNav(false)}>
-                  <p className="text-3xl my-4 hover:underline">
-                    Home
-                  </p>
-                </Link>
-                <Link href="/about" onClick={() => setNav(false)}>
-                  <p className="text-3xl my-4 hover:underline">
-                    About
-                  </p>
-                </Link>
-                <Link href="/services" onClick={() => setNav(false)}>
-                  <p className="text-3xl my-4 hover:underline">
-                    Services
-                  </p>
-                </Link>
-                <Link href="/faq" onClick={() => setNav(false)}>
-                  <p className="text-3xl my-4 hover:underline">FAQ</p>
-                </Link>
-                <Link href="/contact" onClick={() => setNav(false)}>
-                  <p className="text-3xl my-4 hover:underline">
-                    Contact
-                  </p>
-                </Link>
+                {items
+                  ?.filter(
+                    (item) =>
+                      ![
+                        "Terms of Service",
+                        "Privacy Policy",
+                        "Disclaimer",
+                      ].includes(item.title)
+                  )
+                  .map((item) => (
+                    <Link
+                      href={item.href}
+                      key={item.id}
+                      onClick={() => setNav(false)}
+                    >
+                      <p className="text-3xl my-4 hover:underline">
+                        {item.title}
+                      </p>
+                    </Link>
+                  ))}
               </div>
             </div>
           </div>

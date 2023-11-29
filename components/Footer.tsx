@@ -1,8 +1,14 @@
 import Image from "next/image";
 import { Icons } from "./Icons";
 import Link from "next/link";
+import { NavLink } from "@/types";
+import { FC } from "react";
 
-const Footer = () => (
+interface FooterProps {
+  items?: NavLink[];
+}
+
+const Footer: FC<FooterProps> = ({ items }) => (
   <footer className="pt-12">
     <div className="container mx-auto px-[4vw] sm:px-10 md:px-12 lg:px-16 xl:px-24">
       <div className="sm:flex sm:items-center sm:justify-center">
@@ -50,30 +56,11 @@ const Footer = () => (
       <hr className="my-6 border-green sm:mx-auto lg:my-8" />
       <div className="border-b border-b-green pb-8">
         <ul className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-2">
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/about">About</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/services">Services</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/faq">FAQ</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/contact">Contact</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/terms-of-service">Terms of Service</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/privacy-policy">Privacy Policy</Link>
-          </li>
-          <li className="sm:ml-10 hover:underline">
-            <Link href="/disclaimer">Disclaimer</Link>
-          </li>
+          {items?.map((item) => (
+            <li className="sm:ml-10 hover:underline" key={item.id}>
+              <Link href={item.href}>{item.title}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="flex flex-col sm:flex-row justify-between gap-6 py-4">

@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { navConfig } from "@/config/nav";
 
 type Props = {
   children?: ReactNode;
@@ -62,9 +63,9 @@ const Layout = ({ children, title }: Props) => {
         <meta name="theme-color" content="#fff8e7" />
       </Head>
       <div className="flex flex-col h-screen">
-        <Navbar />
+        <Navbar items={navConfig.navLinks} />
         <main>{children}</main>
-        <Footer />
+        <Footer items={navConfig.navLinks} />
       </div>
     </>
   );
